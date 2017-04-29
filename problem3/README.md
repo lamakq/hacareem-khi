@@ -3,7 +3,7 @@
 `java -jar publisher.jar <CSV file path> <consumer endpoint>`
 
 
-** Example: **
+**Example:**
 
 `java -jar publisher.jar C:\Users\x\Desktop\rides.csv http://localhost:8080`
 
