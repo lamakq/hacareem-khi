@@ -3,17 +3,19 @@
 ## Schedule
 
 ### Day 1
-- 2 PM Lunch
-- 4 PM Tea
-- 6 PM Design doc submission
+- 2.00 PM Lunch
+- 4.00 PM Tea
+- 6.00 PM Design doc submission
   - **(email: lamak.qaizar@careem.com, subject: 'Hacareem KHI TEAM #X - Design Doc', attachment: zip)**
 - 6.15 PM Large data-set for problem 3 (**uploaded**)
-- 8 PM Dinner
+- 8.00 PM Dinner
 
 ### Day 2
-- 9 AM Code submission deadline
+- 9.00 AM Code submission deadline
 - 9.30 AM Demos
-- 12 PM Award distribution
+- 12.00 PM Award distribution
+- 12.30 PM Interviews for shortlisted candidates
+
 
 ## Problem Statement 1: Book A Single Tap Ride
 
