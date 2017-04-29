@@ -1,5 +1,4 @@
 # hacareem-khi
-Hacareem KHI Problem Statements
 
 ## Problem Statement 1: Book A Single Tap Ride
 
@@ -16,7 +15,7 @@ Build a progressive web app, Hybrid Mobile app, Android app or iOS app for a one
 - Recovery in case of automatic updates from platform stores
 
 
-*Judging Criteria*
+**Judging Criteria**
 We will be judging you on the following criteria:
 - Completeness
 - Architecture
@@ -35,10 +34,10 @@ They can be categorized through various means, [Paid, Unpaid], [Food, Lifestyle,
 
 You need to develop Android/iOS/Web application for Careem Discounts.
 
-*Provided Prerequisites*
+**Provided Prerequisites**
 There are no provided Prerequisites for this statement. Participants needs to setup
 
-*Things to Think About*
+**Things to Think About**
 - Architecture and Frameworks to build application
 - Storage Choices – Which Database and why
 - Algorithm and Flow to work effectively
@@ -47,7 +46,7 @@ There are no provided Prerequisites for this statement. Participants needs to se
 - User Interface, Pleasant way to display promotions
 - When and How promotions should be displayed?
 
-*Judging Criteria*
+**Judging Criteria**
 - Creativity
 - Completeness
 - Objective Accomplishment
@@ -69,13 +68,13 @@ A user interface (web or mobile) that integrates with this API.
 
 Note that you can pick 1 and 2, or 2 and 3 based on your areas of interest. Going full-monty (1, 2 and 3) will earn you some extra nuggets!
 
-*Things to think about:*
+**Things to think about:**
 - Burst traffic (to the endpoint / API)
 - Design patterns & dependency injection
 - Testing (unit, integration, mocking etc.)
 - Storage (in-memory vs. persistent, sql vs nosql etc.)
 
-*Judging criteria:*
+**Judging criteria:**
 - Completeness
 - Code Toxicity
 - Architecture
