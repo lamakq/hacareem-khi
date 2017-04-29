@@ -1,0 +1,4025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032) -->
+<html lang="en" class="wf-sourcesanspro-n4-active wf-sourcecodepro-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Careem Developer Portal</title>
+
+    <script src="./Careem Developer Portal_files/jquery.min.js.download"></script>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./Careem Developer Portal_files/bootstrap.css" rel="stylesheet">
+
+    <link href="./Careem Developer Portal_files/prettify.css" rel="stylesheet" media="screen">
+
+    <!-- Custom CSS -->
+    <link href="./Careem Developer Portal_files/simple-sidebar.css" rel="stylesheet">
+
+    <link href="./Careem Developer Portal_files/style.css" rel="stylesheet">
+
+    <link href="https://developer.careem.com/images/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./Careem Developer Portal_files/polyfill.js.download"></script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="api" src="./Careem Developer Portal_files/api.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Careem Developer Portal_files/jquery.min.js(1).download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="./Careem Developer Portal_files/lodash.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales" src="./Careem Developer Portal_files/locale.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsp/api/api_project.js" src="./Careem Developer Portal_files/api_project.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsp/api/api_data.js" src="./Careem Developer Portal_files/api_data.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utilsSampleRequest" src="./Careem Developer Portal_files/send_sample_request.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="semver" src="./Careem Developer Portal_files/semver.min.custom.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="webfontloader" src="./Careem Developer Portal_files/webfontloader.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pathToRegexp" src="./Careem Developer Portal_files/index.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="prettify" src="./Careem Developer Portal_files/prettify.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars" src="./Careem Developer Portal_files/handlebars.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/de.js" src="./Careem Developer Portal_files/de.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/es.js" src="./Careem Developer Portal_files/es.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/fr.js" src="./Careem Developer Portal_files/fr.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/nl.js" src="./Careem Developer Portal_files/nl.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/pl.js" src="./Careem Developer Portal_files/pl.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/pt_br.js" src="./Careem Developer Portal_files/pt_br.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/ru.js" src="./Careem Developer Portal_files/ru.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/zh.js" src="./Careem Developer Portal_files/zh.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="locales/zh_cn.js" src="./Careem Developer Portal_files/zh_cn.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./Careem Developer Portal_files/bootstrap.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebarsExtended" src="./Careem Developer Portal_files/handlebars_helper.js.download"></script><link rel="stylesheet" href="./Careem Developer Portal_files/css" media="all"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="diffMatchPatch" src="./Careem Developer Portal_files/diff_match_patch.min.js.download"></script></head>
+
+<body cz-shortcut-listen="true">
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="https://developer.careem.com/"><img src="./Careem Developer Portal_files/careem-logo.png"><span>DEVELOPERS</span>
+            </a>
+        </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse pull-right navbar-dropdown">
+            <ul class="nav navbar-nav navbar-dropdown-margin">
+                <li class="nav-fixed sidebar-brand" data-group="_"><a href="https://developer.careem.com/dashboard">Dashboard</a></li>
+                <li class="sidebar-brand" data-group="Estimates"><a href="">API Guide</a></li>
+                <li class="sidebar-brand"><a href="https://developer.careem.com/deepLinking">Deep Linking</a></li>
+                <li class="sidebar-brand" data-group="Products"><a href="#sandBox">SandBox</a></li>
+                <li class="sidebar-brand navbar-login" data-group="User"><a class="text">Hi API!</a></li>
+                <li class="sidebar-brand"><a href="https://developer.careem.com/logout">Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script id="template-sidenav" type="text/x-handlebars-template">
+    <nav id="scrollingNav">
+        <ul class="sidebar-nav">
+            {{#each nav}}
+                {{#if title}}
+                    {{#if isHeader}}
+                        {{#if isFixed}}
+                            <li class="nav-fixed sidebar-brand" data-group="{{group}}"><a href="#api-{{group}}">{{underscoreToSpace title}}</a></li>
+                        {{else}}
+                            <li class="sidebar-brand" data-group="{{group}}"><a href="#api-{{group}}">{{underscoreToSpace title}}</a></li>
+                        {{/if}}
+                        {{else}}
+                            <li {{#if hidden}}class="hide" {{/if}}data-group="{{group}}" data-name="{{name}}" data-version="{{version}}">
+                            <a class="prettyprint language-html api-request" data-type="{{toLowerCase type}}" href="#api-{{group}}-{{name}}">{{url}}</a>
+                            </li>
+                    {{/if}}
+                {{/if}}
+            {{/each}}
+        </ul>
+    </nav>
+</script>
+
+<script id="template-project" type="text/x-handlebars-template">
+    <div class="pull-left">
+        <h1>{{name}}</h1>
+        {{#if description}}<h2>{{{nl2br description}}}</h2>{{/if}}
+    </div>
+    {{#if template.withCompare}}
+    <div class="pull-right">
+        <div class="btn-group">
+            <button id="version" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+                <strong>{{version}}</strong> <span class="caret"></span>
+            </button>
+            <ul id="versions" class="dropdown-menu open-left">
+                <li><a id="compareAllWithPredecessor" href="#">{{__ "Compare all with predecessor"}}</a></li>
+                <li class="divider"></li>
+                <li class="disabled"><a href="#">{{__ "show up to version:"}}</a></li>
+                {{#each versions}}
+                <li class="version"><a href="#">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
+    <div class="clearfix"></div>
+</script>
+
+<script id="template-header" type="text/x-handlebars-template">
+    {{#if content}}
+    <div id="api-_">{{{content}}}</div>
+    {{/if}}
+</script>
+
+<script id="template-footer" type="text/x-handlebars-template">
+    {{#if content}}
+    <div id="api-_footer">{{{content}}}</div>
+    {{/if}}
+</script>
+
+<script id="template-generator" type="text/x-handlebars-template">
+    {{#if template.withGenerator}}
+    {{#if generator}}
+    <div class="content">
+        {{__ "Generated with"}} <a href="{{{generator.url}}}">{{{generator.name}}}</a> {{{generator.version}}} - {{{generator.time}}}
+    </div>
+    {{/if}}
+    {{/if}}
+</script>
+
+<script id="template-sections" type="text/x-handlebars-template">
+    <div id="api-{{group}}" class="container-fluid">
+        <h1>{{underscoreToSpace title}}</h1>
+        {{#if description}}
+        <p>{{{nl2br description}}}</p>
+        {{/if}}
+        {{#each articles}}
+        <div id="api-{{group}}-{{name}}" class="row">
+            <div class="col-lg-12">
+                <p>{{{article}}}</p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+<script id="template-article" type="text/x-handlebars-template">
+    <article id="api-{{article.group}}-{{article.name}}-{{article.version}}" {{#if hidden}}class="hide"{{/if}} data-group="{{article.group}}" data-name="{{article.name}}" data-version="{{article.version}}">
+    <div class="pull-left">
+        <h1>{{article.groupTitle}}{{#if article.title}} : {{article.title}}{{/if}}</h1>
+    </div>
+    {{#if template.withCompare}}
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>{{article.version}}</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">{{__ "compare changes to:"}}</a></li>
+                {{#each versions}}
+                <li class="version"><a href="#">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
+    <div class="clearfix"></div>
+
+    {{#if article.description}}
+    <p>{{{nl2br article.description}}}</p>
+    {{/if}}
+
+    <pre class="prettyprint language-html" data-type="{{toLowerCase article.type}}"><code>{{article.url}}</code></pre>
+
+    {{#if article.permission}}
+    <p>
+        {{__ "Permission:"}}
+        {{#each article.permission}}
+        {{name}}
+        {{#if title}}
+        &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br description}}" title="" data-original-title="{{title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+        {{#unless @last}}, {{/unless}}
+        {{/if}}
+        {{/each}}
+    </p>
+    {{/if}}
+
+    {{#if_gt article.examples.length compare=0}}
+    <ul class="nav nav-tabs nav-tabs-examples">
+        {{#each article.examples}}
+        <li{{#if_eq @index compare=0}} class="active"{{/if_eq}}>
+        <a href="#examples-{{../id}}-{{@index}}">{{title}}</a>
+        </li>
+        {{/each}}
+    </ul>
+
+    <div class="tab-content">
+        {{#each article.examples}}
+        <div class="tab-pane{{#if_eq @index compare=0}} active{{/if_eq}}" id="examples-{{../id}}-{{@index}}">
+            <pre class="prettyprint language-{{type}}" data-type="{{type}}"><code>{{content}}</code></pre>
+        </div>
+        {{/each}}
+    </div>
+    {{/if_gt}}
+
+    {{subTemplate "article-param-block" params=article.header _hasType=_hasTypeInHeaderFields section="header"}}
+    {{subTemplate "article-param-block" params=article.parameter _hasType=_hasTypeInParameterFields section="parameter"}}
+    {{subTemplate "article-param-block" params=article.success _hasType=_hasTypeInSuccessFields section="success"}}
+    {{subTemplate "article-param-block" params=article.error _col1="Name" _hasType=_hasTypeInErrorFields section="error"}}
+
+    </article>
+</script>
+
+<script id="template-article-param-block" type="text/x-handlebars-template">
+    {{#if params}}
+    {{#each params.fields}}
+    <h2>{{__ @key}}</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">{{#if ../../_col1}}{{__ ../../_col1}}{{else}}{{__ "Field"}}{{/if}}</th>
+            {{#if ../../_hasType}}<th style="width: 10%">{{__ "Type"}}</th>{{/if}}
+            <th style="width: {{#if _hasType}}60%{{else}}70%{{/if}}">{{__ "Description"}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each this}}
+        <tr>
+            <td class="code">{{{splitFill field "." "&nbsp;&nbsp;"}}}{{#if optional}} <span class="label label-optional">{{__ "optional"}}</span>{{/if}}</td>
+            {{#if ../../_hasType}}
+            <td>
+                {{{type}}}
+            </td>
+            {{/if}}
+            <td>
+                {{{nl2br description}}}
+                {{#if defaultValue}}<p class="default-value">{{__ "Default value:"}} <code>{{{defaultValue}}}</code></p>{{/if}}
+                {{#if size}}<p class="type-size">{{__ "Size range:"}} <code>{{{size}}}</code></p>{{/if}}
+                {{#if allowedValues}}<p class="type-size">{{__ "Allowed values:"}}
+                {{#each allowedValues}}
+                <code>{{{this}}}</code>{{#unless @last}}, {{/unless}}
+                {{/each}}
+            </p>
+                {{/if}}
+            </td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+    {{/each}}
+
+    {{#if_gt params.examples.length compare=0}}
+    <ul class="nav nav-tabs nav-tabs-examples">
+        {{#each params.examples}}
+        <li{{#if_eq @index compare=0}} class="active"{{/if_eq}}>
+        <a href="# {{../section}}-examples-{{../id}}-{{@index}}">{{title}}</a>
+        </li>
+        {{/each}}
+    </ul>
+
+    <div class="tab-content">
+        {{#each params.examples}}
+        <div class="tab-pane{{#if_eq @index compare=0}} active{{/if_eq}}" id="{{../section}}-examples-{{../id}}-{{@index}}">
+            <pre class="prettyprint language-{{type}}" data-type="{{type}}"><code>{{content}}</code></pre>
+        </div>
+        {{/each}}
+    </div>
+    {{/if_gt}}
+
+    {{/if}}
+</script>
+
+<script id="template-compare-article" type="text/x-handlebars-template">
+    <article id="api-{{article.group}}-{{article.name}}-{{article.version}}" {{#if hidden}}class="hide"{{/if}} data-group="{{article.group}}" data-name="{{article.name}}" data-version="{{article.version}}" data-compare-version="{{compare.version}}">
+    <div class="pull-left">
+        <h1>{{underscoreToSpace article.group}} - {{{showDiff article.title compare.title}}}</h1>
+    </div>
+
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="btn btn-success" disabled>
+                <strong>{{article.version}}</strong> {{__ "compared to"}}
+            </button>
+            <button class="version btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                <strong>{{compare.version}}</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">{{__ "compare changes to:"}}</a></li>
+                <li class="divider"></li>
+                {{#each versions}}
+                <li class="version"><a href="#">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    {{#if article.description}}
+    <p>{{{showDiff article.description compare.description "nl2br"}}}</p>
+    {{else}}
+    {{#if compare.description}}
+    <p>{{{showDiff "" compare.description "nl2br"}}}</p>
+    {{/if}}
+    {{/if}}
+
+    <pre class="prettyprint language-html" data-type="{{toLowerCase article.type}}"><code>{{{showDiff article.url compare.url}}}</code></pre>
+
+    {{subTemplate "article-compare-permission" article=article compare=compare}}
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        {{#each_compare_title article.examples compare.examples}}
+
+        {{#if typeSame}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="#compare-examples-{{../../article.id}}-{{index}}">{{{showDiff source.title compare.title}}}</a>
+        </li>
+        {{/if}}
+
+        {{#if typeIns}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="#compare-examples-{{../../article.id}}-{{index}}"><ins>{{{source.title}}}</ins></a>
+        </li>
+        {{/if}}
+
+        {{#if typeDel}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="#compare-examples-{{../../article.id}}-{{index}}"><del>{{{compare.title}}}</del></a>
+        </li>
+        {{/if}}
+
+        {{/each_compare_title}}
+    </ul>
+
+    <div class="tab-content">
+        {{#each_compare_title article.examples compare.examples}}
+
+        {{#if typeSame}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{source.type}}"><code>{{{showDiff source.content compare.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{#if typeIns}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{source.type}}"><code>{{{source.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{#if typeDel}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{compare.type}}"><code>{{{compare.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{/each_compare_title}}
+    </div>
+
+    {{subTemplate "article-compare-param-block" source=article.parameter compare=compare.parameter _hasType=_hasTypeInParameterFields section="parameter"}}
+    {{subTemplate "article-compare-param-block" source=article.success compare=compare.success _hasType=_hasTypeInSuccessFields section="success"}}
+    {{subTemplate "article-compare-param-block" source=article.error compare=compare.error _col1="Name" _hasType=_hasTypeInErrorFields section="error"}}
+
+    </article>
+</script>
+
+<script id="template-article-compare-permission" type="text/x-handlebars-template">
+    {{#each_compare_list_field article.permission compare.permission field="name"}}
+    {{#if source}}
+    {{#if typeSame}}
+    {{source.name}}
+    {{#if source.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br source.description}}" title="" data-original-title="{{source.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+
+    {{#if typeIns}}
+    <ins>{{source.name}}</ins>
+    {{#if source.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br source.description}}" title="" data-original-title="{{source.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+
+    {{#if typeDel}}
+    <del>{{source.name}}</del>
+    {{#if source.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br source.description}}" title="" data-original-title="{{source.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+    {{else}}
+    {{#if typeSame}}
+    {{compare.name}}
+    {{#if compare.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br compare.description}}" title="" data-original-title="{{compare.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+
+    {{#if typeIns}}
+    <ins>{{compare.name}}</ins>
+    {{#if compare.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br compare.description}}" title="" data-original-title="{{compare.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+
+    {{#if typeDel}}
+    <del>{{compare.name}}</del>
+    {{#if compare.title}}
+    &nbsp;<a href="#" data-toggle="popover" data-placement="right" data-html="true" data-content="{{nl2br compare.description}}" title="" data-original-title="{{compare.title}}"><span class="label label-info"><i class="icon icon-info-sign icon-white"></i></span></a>
+    {{#unless _last}}, {{/unless}}
+    {{/if}}
+    {{/if}}
+    {{/if}}
+    {{/each_compare_list_field}}
+</script>
+
+<script id="template-article-compare-param-block" type="text/x-handlebars-template">
+    {{#if source}}
+    {{#each_compare_keys source.fields compare.fields}}
+    {{#if typeSame}}
+    <h2>{{__ source.key}}</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">{{#if ../../_col1}}{{__ ../../_col1}}{{else}}{{__ "Field"}}{{/if}}</th>
+            {{#if ../../_hasType}}<th style="width: 10%">{{__ "Type"}}</th>{{/if}}
+            <th style="width: {{#if _hasType}}60%{{else}}70%{{/if}}">{{__ "Description"}}</th>
+        </tr>
+        </thead>
+        {{subTemplate "article-compare-param-block-body" source=source.value compare=compare.value _hasType=../../_hasType}}
+    </table>
+    {{/if}}
+
+    {{#if typeIns}}
+    <h2><ins>{{__ source.key}}</ins></h2>
+    <table class="ins">
+        <thead>
+        <tr>
+            <th style="width: 30%">{{#if ../../_col1}}{{__ ../../_col1}}{{else}}{{__ "Field"}}{{/if}}</th>
+            {{#if ../../_hasType}}<th style="width: 15%">{{__ "Type"}}</th>{{/if}}
+            <th style="width: {{#if _hasType}}60%{{else}}65%{{/if}}">{{__ "Description"}}</th>
+        </tr>
+        </thead>
+        {{subTemplate "article-compare-param-block-body" source=source.value compare=source.value _hasType=../../_hasType}}
+    </table>
+    {{/if}}
+
+    {{#if typeDel}}
+    <h2><del>{{__ compare.key}}</del></h2>
+    <table class="del">
+        <thead>
+        <tr>
+            <th style="width: 30%">{{#if ../../_col1}}{{__ ../../_col1}}{{else}}{{__ "Field"}}{{/if}}</th>
+            {{#if ../../_hasType}}<th style="width: 10%">{{__ "Type"}}</th>{{/if}}
+            <th style="width: {{#if _hasType}}60%{{else}}70%{{/if}}">{{__ "Description"}}</th>
+        </tr>
+        </thead>
+        {{subTemplate "article-compare-param-block-body" source=compare.value compare=compare.value _hasType=../../_hasType}}
+    </table>
+    {{/if}}
+    {{/each_compare_keys}}
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        {{#each_compare_title source.examples compare.examples}}
+
+        {{#if typeSame}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="# {{../../section}}-compare-examples-{{../../article.id}}-{{index}}">{{{showDiff source.title compare.title}}}</a>
+        </li>
+        {{/if}}
+
+        {{#if typeIns}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="# {{../../section}}-compare-examples-{{../../article.id}}-{{index}}"><ins>{{{source.title}}}</ins></a>
+        </li>
+        {{/if}}
+
+        {{#if typeDel}}
+        <li{{#if_eq index compare=0}} class="active"{{/if_eq}}>
+        <a href="# {{../../section}}-compare-examples-{{../../article.id}}-{{index}}"><del>{{{compare.title}}}</del></a>
+        </li>
+        {{/if}}
+
+        {{/each_compare_title}}
+    </ul>
+
+    <div class="tab-content">
+        {{#each_compare_title source.examples compare.examples}}
+
+        {{#if typeSame}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="{{../../section}}-compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{source.type}}"><code>{{{showDiff source.content compare.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{#if typeIns}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="{{../../section}}-compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{source.type}}"><code>{{{source.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{#if typeDel}}
+        <div class="tab-pane{{#if_eq index compare=0}} active{{/if_eq}}" id="{{../../section}}-compare-examples-{{../../article.id}}-{{index}}">
+            <pre class="prettyprint language-{{source.type}}" data-type="{{compare.type}}"><code>{{{compare.content}}}</code></pre>
+        </div>
+        {{/if}}
+
+        {{/each_compare_title}}
+    </div>
+
+    {{/if}}
+</script>
+
+<script id="template-article-compare-param-block-body" type="text/x-handlebars-template">
+    <tbody>
+    {{#each_compare_field source compare}}
+    {{#if typeSame}}
+    <tr>
+        <td class="code">
+            {{{splitFill source.field "." "&nbsp;&nbsp;"}}}
+            {{#if source.optional}}
+            {{#if compare.optional}} <span class="label label-optional">{{__ "optional"}}</span>
+            {{else}} <span class="label label-optional label-ins">{{__ "optional"}}</span>
+            {{/if}}
+            {{else}}
+            {{#if compare.optional}} <span class="label label-optional label-del">{{__ "optional"}}</span>{{/if}}
+            {{/if}}
+        </td>
+
+        {{#if source.type}}
+        {{#if compare.type}}
+        <td>{{{showDiff source.type compare.type}}}</td>
+        {{else}}
+        <td>{{{source.type}}}</td>
+        {{/if}}
+        {{else}}
+        {{#if compare.type}}
+        <td>{{{compare.type}}}</td>
+        {{else}}
+        {{#if ../../../../_hasType}}<td></td>{{/if}}
+        {{/if}}
+        {{/if}}
+        <td>
+            {{{showDiff source.description compare.description "nl2br"}}}
+            {{#if source.defaultValue}}<p class="default-value">{{__ "Default value:"}} <code>{{{showDiff source.defaultValue compare.defaultValue}}}</code><p>{{/if}}
+        </td>
+    </tr>
+    {{/if}}
+
+    {{#if typeIns}}
+    <tr class="ins">
+        <td class="code">
+            {{{splitFill source.field "." "&nbsp;&nbsp;"}}}
+            {{#if source.optional}} <span class="label label-optional label-ins">{{__ "optional"}}</span>{{/if}}
+        </td>
+
+        {{#if source.type}}
+        <td>{{{source.type}}}</td>
+        {{else}}
+        {{{typRowTd}}}
+        {{/if}}
+
+        <td>
+            {{{nl2br source.description}}}
+            {{#if source.defaultValue}}<p class="default-value">{{__ "Default value:"}} <code>{{{source.defaultValue}}}</code><p>{{/if}}
+        </td>
+    </tr>
+    {{/if}}
+
+    {{#if typeDel}}
+    <tr class="del">
+        <td class="code">
+            {{{splitFill compare.field "." "&nbsp;&nbsp;"}}}
+            {{#if compare.optional}} <span class="label label-optional label-del">{{__ "optional"}}</span>{{/if}}
+        </td>
+
+        {{#if compare.type}}
+        <td>{{{compare.type}}}</td>
+        {{else}}
+        {{{typRowTd}}}
+        {{/if}}
+
+        <td>
+            {{{nl2br compare.description}}}
+            {{#if compare.defaultValue}}<p class="default-value">{{__ "Default value:"}} <code>{{{compare.defaultValue}}}</code><p>{{/if}}
+        </td>
+    </tr>
+    {{/if}}
+
+    {{/each_compare_field}}
+    </tbody>
+</script>
+
+<div class="container fonts-doc">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+    <nav id="scrollingNav">
+        <ul class="sidebar-nav">
+                            <li class="nav-fixed sidebar-brand" data-group="_"><a href="#api-_">Overview</a></li>
+                            <li class="sidebar-brand" data-group="Products"><a href="#api-Products">Products</a></li>
+                            <li data-group="Products" data-name="GetProducts" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="get" href="#api-Products-GetProducts">/v1/products</a>
+                            </li>
+                            <li class="sidebar-brand" data-group="Estimates"><a href="#api-Estimates">Estimates</a></li>
+                            <li data-group="Estimates" data-name="Estimated_Arrival_Time" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="get" href="#api-Estimates-Estimated_Arrival_Time">/v1/estimates/time</a>
+                            </li>
+                            <li data-group="Estimates" data-name="Trip_fare__time___distance_estimation_API" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="get" href="#api-Estimates-Trip_fare__time___distance_estimation_API">/v1/estimates/price</a>
+                            </li>
+                            <li class="sidebar-brand" data-group="Bookings"><a href="#api-Bookings">Bookings</a></li>
+                            <li data-group="Bookings" data-name="Create_Booking" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="post" href="#api-Bookings-Create_Booking">/v1/bookings</a>
+                            </li>
+                            <li data-group="Bookings" data-name="Update_Booking" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="put" href="#api-Bookings-Update_Booking">/v1/bookings/{booking_id}</a>
+                            </li>
+                            <li data-group="Bookings" data-name="Cancel_Booking" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="delete" href="#api-Bookings-Cancel_Booking">/v1/bookings/{booking_id}</a>
+                            </li>
+                            <li data-group="Bookings" data-name="Booking_Details" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="get" href="#api-Bookings-Booking_Details">/v1/bookings/{booking_id}</a>
+                            </li>
+                            <li data-group="Bookings" data-name="Track_Booking" data-version="v1">
+                            <a class="prettyprint language-html api-request" data-type="get" href="#api-Bookings-Track_Booking">/v1/bookings/{booking_id}/track</a>
+                            </li>
+                            <li class="nav-fixed sidebar-brand" data-group="_footer"><a href="#api-_footer">Reference</a></li>
+        </ul>
+    </nav>
+</div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="header">
+    <div id="api-_"><h1>Overview</h1>
+<p>Here you will find reference documentation to help you start integrating Careem into your app or website as quickly as possible. The chart below explains the flow of API calls:</p>
+<h2>API Reference</h2>
+<p>(updated: February 16, 2016)</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>End point</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/v1/products</td>
+<td>List of Careem product details</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/v1/estimates/time</td>
+<td>Get time estimates</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/v1/estimates/price</td>
+<td>Get price estimates</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/v1/bookings</td>
+<td>Create a booking request</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/v1/bookings/{booking_id}</td>
+<td>Get booking details</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>/v1/bookings/{booking_id}</td>
+<td>Update a booking</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/v1/bookings/{booking_id}</td>
+<td>Cancel a booking</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/v1/bookings/{booking_id}/track</td>
+<td>Track a booking</td>
+</tr>
+</tbody>
+</table>
+<h2>Flow of APIs</h2>
+<p><img src="./Careem Developer Portal_files/api-flow.svg" alt="Flow of APIs"></p>
+<h2>Host Urls</h2>
+<p>(updated: February 9, 2016)</p>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Host URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production</td>
+<td>http://qa-interface.careem-engineering.com</td>
+</tr>
+</tbody>
+</table>
+<h2>Example request</h2>
+<pre><code>http://qa-interface.careem-engineering.com/v1/products? ...
+</code></pre>
+<h2>Authorization</h2>
+<p>The authorization token can be found from the dashboard, to use the token in sandbox mode it should have a prefix of <em>test-</em> so for example, if the token is <em>aabbcc123aabb</em> then for sandbox mode it should be <em>test-aabbcc123aabb</em>.</p>
+<pre><code>http://qa-interface.careem-engineering.com/
+</code></pre>
+<h2>Error</h2>
+<p>In case of any error (error codes and description described below in each of the APIs) the API response status will not be 2xx &amp; the error json model will be as the following sample with different codes and message for each case. In any case you will always get one error at a time, there will never be (up until this point of time ) multiple errors returned in one response for the calls you make.</p>
+<pre><code>HTTP/1.1 400 Bad Request
+{
+    "code": "ET-0003"
+    "message": "No captains found near given location"
+}
+</code></pre>
+</div>
+</div>
+            <div id="sections">
+    <div id="api-Products" class="container-fluid">
+        <h1>Products</h1>
+        <div id="api-Products-GetProducts" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Products-GetProducts-v1" data-group="Products" data-name="GetProducts" data-version="v1">
+    <div class="pull-left">
+        <h1>Products : Request product information</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API provides products with prices available for a given start location and end location.</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/products</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">latitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Latitude     component of location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">longitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Longitude   component of location.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Unique identifier of a product.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">capacity</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Capacity of product. For example, 4 people.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">display_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Display name of product.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">display_order</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Display order of product.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">price_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>The basic price details  model.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;base_now</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The base price for now bookingUsers age.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;base_later</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The base price for later booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;cost_per_distance</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The charge of per distance.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;distance_unit</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Unit of distance i.e. Kilometer.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;currency_code</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>ISO 4217 currency.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;minimum_now</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Starting fee for now booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;minimum_later</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Starting fees for later booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;cost_per_minute</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The cost per minute.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;cancellation_fee_later</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The fee if a rider cancels later trip after the grace period.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;cancellation_fee_now</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>The fee if a rider cancels now the trip after the grace period.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">availibility_now</td>
+            <td>
+                Boolean
+            </td>
+            <td>
+                <p>Flag, true or false</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">availibility_later</td>
+            <td>
+                Boolean
+            </td>
+            <td>
+                <p>Flag, true or false</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">image</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Image URL representing product</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">minimum_time_to_book</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Minimum time required to book a ride for later.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">maximum_time_to_cancel_now</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Max time allowed to cancel a now booking without penalty.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">maximum_time_to_cancel_later</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Max time allowed to cancel a later booking without penalty.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Products-GetProducts-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Products-GetProducts-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"products"</span><span class="pun">:</span><span class="pln">
+     </span><span class="pun">[</span><span class="pln">
+         </span><span class="pun">{</span><span class="pln">
+             </span><span class="str">"product_id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"capacity"</span><span class="pun">:</span><span class="lit">6</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"display_order"</span><span class="pun">:</span><span class="lit">1</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"image"</span><span class="pun">:</span><span class="str">""</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"display_name"</span><span class="pun">:</span><span class="str">"Business Car"</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"availibility_now"</span><span class="pun">:</span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"availibility_later"</span><span class="pun">:</span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"minimum_time_to_book"</span><span class="pun">:</span><span class="lit">20</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"maximum_time_to_cancel_now"</span><span class="pun">:</span><span class="lit">804</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"maximum_time_to_cancel_later"</span><span class="pun">:</span><span class="lit">804</span><span class="pun">,</span><span class="pln">
+             </span><span class="str">"price_details"</span><span class="pun">:</span><span class="pln">
+                 </span><span class="pun">{</span><span class="pln">
+                     </span><span class="str">"base_now"</span><span class="pun">:</span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"base_later"</span><span class="pun">:</span><span class="lit">300</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"cost_per_distance"</span><span class="pun">:</span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"distance_unit"</span><span class="pun">:</span><span class="str">"KM"</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"currency_code"</span><span class="pun">:</span><span class="str">"AED"</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"minimum_now"</span><span class="pun">:</span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"minimum_later"</span><span class="pun">:</span><span class="lit">66</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"cost_per_minute"</span><span class="pun">:</span><span class="lit">90</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"cancellation_fee_later"</span><span class="pun">:</span><span class="lit">60</span><span class="pun">,</span><span class="pln">
+                     </span><span class="str">"cancellation_fee_now"</span><span class="pun">:</span><span class="lit">0</span><span class="pln">
+                 </span><span class="pun">}</span><span class="pln">
+         </span><span class="pun">},</span><span class="pln">
+         </span><span class="pun">{</span><span class="pln">
+
+         </span><span class="pun">}</span><span class="pln">
+     </span><span class="pun">]</span><span class="pln">
+ </span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">PR-0001</td>
+            <td>
+                <p>No Products are available in the location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0002</td>
+            <td>
+                <p>Arguments are invalid.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0003</td>
+            <td>
+                <p>An error occured while getting the products, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">SA-0001</td>
+            <td>
+                <p>Careem does not operate in this area.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0001</td>
+            <td>
+                <p>Invalid latitude, can't have values out of (-90,90).</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0002</td>
+            <td>
+                <p>Invalid longitude, Can't have values out of (-180/180).</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Products-GetProducts-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Products-GetProducts-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SA-0001"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Careem does not operate in this area."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+    </div>
+
+    <div id="api-Estimates" class="container-fluid">
+        <h1>Estimates</h1>
+        <div id="api-Estimates-Estimated_Arrival_Time" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Estimates-Estimated_Arrival_Time-v1" data-group="Estimates" data-name="Estimated_Arrival_Time" data-version="v1">
+    <div class="pull-left">
+        <h1>Estimates : Arrival Time</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>Returns ETA of closest driver for all available products in given location</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/estimates/time</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">start_latitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Latitude component.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">start_longitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Longitude component.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">product_id <span class="label label-optional">optional</span></td>
+            <td>
+                int
+            </td>
+            <td>
+                <p>If in case you want only one specific ETA you can specify one of the product ids you received from the /products api. Make sure that the coordinates used in /products is the same used in this api call.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                int
+            </td>
+            <td>
+                <p>Unique identifier representing a specific product for a given latitude &amp; longitude.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">display_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Display name of product</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">eta</td>
+            <td>
+                long
+            </td>
+            <td>
+                <p>ETA for the product. Always in seconds</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Estimates-Estimated_Arrival_Time-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Estimates-Estimated_Arrival_Time-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK
+</span><span class="pun">{</span><span class="pln">
+ </span><span class="str">"times"</span><span class="pun">:</span><span class="pln">
+        </span><span class="pun">[</span><span class="pln">
+            </span><span class="pun">{</span><span class="pln">
+                </span><span class="str">"product_id"</span><span class="pun">:</span><span class="lit">77</span><span class="pun">,</span><span class="pln">
+                </span><span class="str">"display_name"</span><span class="pun">:</span><span class="str">"Economy car"</span><span class="pun">,</span><span class="pln">
+                </span><span class="str">"eta"</span><span class="pun">:</span><span class="lit">282</span><span class="pln">
+            </span><span class="pun">},</span><span class="pln">
+            </span><span class="pun">{</span><span class="pln">
+                </span><span class="str">"product_id"</span><span class="pun">:</span><span class="lit">176</span><span class="pun">,</span><span class="pln">
+                </span><span class="str">"display_name"</span><span class="pun">:</span><span class="str">"Careem Karachi"</span><span class="pun">,</span><span class="pln">
+                </span><span class="str">"eta"</span><span class="pun">:</span><span class="lit">282</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">]</span><span class="pln">
+    </span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">ET-0004</td>
+            <td>
+                <p>No captains found for given product near given location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">ET-0003</td>
+            <td>
+                <p>No captains found near given location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">SA-0001</td>
+            <td>
+                <p>Careem does not operate in this area.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Estimates-Estimated_Arrival_Time-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Estimates-Estimated_Arrival_Time-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ET-0003"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"No captains found near given location."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <div id="api-Estimates-Trip_fare__time___distance_estimation_API" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Estimates-Trip_fare__time___distance_estimation_API-v1" data-group="Estimates" data-name="Trip_fare__time___distance_estimation_API" data-version="v1">
+    <div class="pull-left">
+        <h1>Estimates : Trip fare, time &amp; distance estimation API</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>Provides information about the trip itinerary you requested from a price,distance &amp; time point of view . it also tells you if this trip will apply a surge ( in case of a now booking ) or what is the maximum surge cap that will apply at the time of the trip happening in case of a later booking.</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/estimates/price</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">start_latitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Latitude component start location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">start_longitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Longitude component start location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">end_latitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Latitude component of end location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">end_longitude</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Longitude component end location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">booking_type</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Now or Later booking type. In case of LATER booking you have to send a pickup time (below) and it has to be 1 hour in advance or else an error will be returned.</p>
+                
+                
+                <p class="type-size">Allowed values:
+                <code>"NOW"</code>, 
+                <code>"LATER"</code>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Unique identifier representing a specific product for a given latitude &amp; longitude.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">pickup_time</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">duration</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Estimated time for trip.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">distance</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Estimated distance for trip.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">currency_code</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>ISO 4217 currency.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">estimate</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Estimated price range for trip.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">low_estimate</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Lower bound of the estimated price.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">high_estimate</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Upper bound of the estimated price.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">metric</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Metric can be Km or mile.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">surge_model</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Surge model that contains surge details. This model could be NULL in case no surge really apply.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;token</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Surge token, you will need this once you request a booking using our new public api for booking creation.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;surge_multiplier</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>If booking type is <code>NOW</code> The multiplier that will apply on top  of the estimated price provided If booking type is <code>LATER</code> The maximum multiplier that might apply at the time when the booking is taking place.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;expiry_in_minutes</td>
+            <td>
+                Number
+            </td>
+            <td>
+                <p>Expiry of surge,  always in minutes, you should not send an expired token when requesting a ride or else the api will respond with Error so you refresh your value and send it again. This is important to avoid a case where customer gets an unexpected surge.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Estimates-Trip_fare__time___distance_estimation_API-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Estimates-Trip_fare__time___distance_estimation_API-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK
+</span><span class="pun">{</span><span class="pln">
+     </span><span class="str">"duration"</span><span class="pun">:</span><span class="lit">251</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"distance"</span><span class="pun">:</span><span class="lit">2.838</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"estimate"</span><span class="pun">:</span><span class="str">"AED 50.4 - 55.0"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"surge"</span><span class="pun">:</span><span class="pln">
+     </span><span class="pun">{</span><span class="pln">
+         </span><span class="str">"token"</span><span class="pun">:</span><span class="str">"v7n6sqn04d51aj3ottuj4kdblp"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"multiplier"</span><span class="pun">:</span><span class="lit">1.2</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"expiry_in_minutes"</span><span class="pun">:</span><span class="lit">1</span><span class="pln">
+     </span><span class="pun">},</span><span class="pln">
+     </span><span class="str">"metric"</span><span class="pun">:</span><span class="str">"KM"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"currency_code"</span><span class="pun">:</span><span class="str">"AED"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"low_estimate"</span><span class="pun">:</span><span class="lit">50.4</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"high_estimate"</span><span class="pun">:</span><span class="lit">55.0</span><span class="pln">
+ </span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">ET-0001</td>
+            <td>
+                <p>Booking type is invalid, should be either Now or Later.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">ET-0005</td>
+            <td>
+                <p>Pickup time is required for Later bookings.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">ET-0006</td>
+            <td>
+                <p>Pickup time for later is invalid, it should be atleast 1 hour in future.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">ET-0007</td>
+            <td>
+                <p>Product ID is invalid.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">ET-0009</td>
+            <td>
+                <p>The product you requested does not exists or is not open for public.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">SA-0001</td>
+            <td>
+                <p>Careem does not operate in this area.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0001</td>
+            <td>
+                <p>Invalid latitude, can't have values out of (-90,90).</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0002</td>
+            <td>
+                <p>Invalid longitude, Can't have values out of (-180/180).</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Estimates-Trip_fare__time___distance_estimation_API-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Estimates-Trip_fare__time___distance_estimation_API-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"SA-0001"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Careem does not operate in this area."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+    </div>
+
+    <div id="api-Bookings" class="container-fluid">
+        <h1>Bookings</h1>
+        <div id="api-Bookings-Create_Booking" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Bookings-Create_Booking-v1" data-group="Bookings" data-name="Create_Booking" data-version="v1">
+    <div class="pull-left">
+        <h1>Bookings : Booking-Create</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API initiates request for booking</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/bookings</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Body</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                Integer
+            </td>
+            <td>
+                <p>Unique identifier of a product</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">pickup_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Object that contains pickup details.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Longitude component start location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Latitude component start location</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>The beginning or “pickup” nickname label.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">dropoff_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>object that contains drop-off details.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Longitude component end location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Latitude component end location</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>The beginning or “drop-off” nickname label.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">driver_notes</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Notes to driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">booking_type</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Now or Later booking type</p>
+                
+                
+                <p class="type-size">Allowed values:
+                <code>"NOW"</code>, 
+                <code>"LATER"</code>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="code">pickup_time</td>
+            <td>
+                Integer
+            </td>
+            <td>
+                <p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">promo_code</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Promo code to avail any promotion.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">customer_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>The object that contains customer details</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;uuid</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Unique customer identifier, should be maximum of 15 characters.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Name of customer</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;email</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>email address of customer</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;phone_number</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Phone number of customer</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">surge_confirmation_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>The unique identifier of the surge session for a user.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Unique identifier for the requested booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">surge_multiplier</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>If booking type is <code>NOW</code>, The multiplier that will apply on top of the estimated price provided If booking type is <code>LATER</code>, The maximum multiplier that might apply at the time when the booking is taking place.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Bookings-Create_Booking-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Bookings-Create_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">201</span><span class="pln"> </span><span class="typ">Created</span><span class="pln">
+ </span><span class="pun">{</span><span class="pln">
+     </span><span class="str">"booking_id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2VLRXFGAVV"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"surge_multiplier"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1.7</span><span class="pln">
+ </span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">BK-0007</td>
+            <td>
+                <p>Booking detail is missing</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0002</td>
+            <td>
+                <p>Arguments are invalid.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0001</td>
+            <td>
+                <p>No Products are available in the location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0005</td>
+            <td>
+                <p>Please provide a pickup time for later booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0008</td>
+            <td>
+                <p>Customer is blocked</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0003</td>
+            <td>
+                <p>Please provide a valid pickup location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0001</td>
+            <td>
+                <p>Invalid latitude, can't have values out of (-90,90)</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0005</td>
+            <td>
+                <p>Invalid longitude, Can't have values out of (-180/180)</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0004</td>
+            <td>
+                <p>Invalid product id</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">SA-0001</td>
+            <td>
+                <p>Careem does not operate in this area</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0004</td>
+            <td>
+                <p>The selected dropoff location is not supported</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0005</td>
+            <td>
+                <p>Product cannot be used for Later booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0006</td>
+            <td>
+                <p>Product cannot be used for Now booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0009</td>
+            <td>
+                <p>Unable to create cash booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0010</td>
+            <td>
+                <p>The selected pickup time is not allowed.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0011</td>
+            <td>
+                <p>No specified token exists</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0017</td>
+            <td>
+                <p>Promo code does not apply to this booking, Either it is not applicable or expired or limit has been exceeded</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0020</td>
+            <td>
+                <p>This Surge confirmation id has already been used.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0021</td>
+            <td>
+                <p>Duplicate Booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0022</td>
+            <td>
+                <p>Surge offer has expired. Please provide updated Surge Confirmation id.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0023</td>
+            <td>
+                <p>Pick up time differ from surge confirmation.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0024</td>
+            <td>
+                <p>Customer UUID is missing.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0025</td>
+            <td>
+                <p>Booking type is invalid, should be either NOW or LATER.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0031</td>
+            <td>
+                <p>Invalid Promo Code.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0002</td>
+            <td>
+                <p>An error occurred while processing the booking, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0033</td>
+            <td>
+                <p>Customer UUID is too long, it should be of maximum 15 characters.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0034</td>
+            <td>
+                <p>No free captains found to serve this booking.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Bookings-Create_Booking-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Bookings-Create_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BK-0011"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"No specified token exists"</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <div id="api-Bookings-Update_Booking" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Bookings-Update_Booking-v1" data-group="Bookings" data-name="Update_Booking" data-version="v1">
+    <div class="pull-left">
+        <h1>Bookings : Booking-Update</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API updates booking. Booking cannot be updated if it is either cancelled or rejected or the trip has ended.</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/bookings/{booking_id}</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Unique identifier for the booking.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Body</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">pickup_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Object that contains pickup details. Cannot be updated once driver is on his way</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Latitude component start location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Longitude component start location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>The beginning or “pickup” nickname label.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">dropoff_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Object that contains drop-off details. Cannot be updated once trip has ended.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Latitude component end location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                float
+            </td>
+            <td>
+                <p>Longitude component end location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>The beginning or “drop-off” nickname label.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">driver_notes</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Notes to driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">pickup_time</td>
+            <td>
+                Integer
+            </td>
+            <td>
+                <p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER. Cannot be updated once driver is on assigned.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">promo_code</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Promo code to avail any promotion.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Bookings-Update_Booking-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Bookings-Update_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">202</span><span class="pln"> </span><span class="typ">Accepted</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">BK-0001</td>
+            <td>
+                <p>Invalid Booking Id.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0007</td>
+            <td>
+                <p>Booking detail is missing.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">PR-0002</td>
+            <td>
+                <p>Arguments are invalid.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0005</td>
+            <td>
+                <p>Please provide a pickup time for later booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0003</td>
+            <td>
+                <p>Please provide a valid pickup/drop off location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0001</td>
+            <td>
+                <p>Invalid latitude, can't have values out of (-90,90).</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0005</td>
+            <td>
+                <p>Invalid longitude, Can't have values out of (-180/180).</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">SA-0001</td>
+            <td>
+                <p>Careem does not operate in this area</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">CO-0004</td>
+            <td>
+                <p>The selected dropoff location is not supported</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0009</td>
+            <td>
+                <p>Unable to create cash booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0010</td>
+            <td>
+                <p>The selected pickup time is not allowed.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0017</td>
+            <td>
+                <p>Promo code does not apply to this booking, Either it is not applicable or expired or limit has been exceeded</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0021</td>
+            <td>
+                <p>Duplicate Booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0027</td>
+            <td>
+                <p>Application can not access requested booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0028</td>
+            <td>
+                <p>Pickup time cannot be updated. Driver is assigned to the booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0029</td>
+            <td>
+                <p>Booking cannot be updated, either it is rejected or cancelled or the trip has ended.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0030</td>
+            <td>
+                <p>Pickup location cannot be updated as Driver is on his way or trip has started or ended.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0031</td>
+            <td>
+                <p>Invalid Promo Code.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0002</td>
+            <td>
+                <p>An error occurred while processing the booking, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Bookings-Update_Booking-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Bookings-Update_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BK-0028"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Pickup time cannot be updated. Driver is assigned to the booking."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <div id="api-Bookings-Cancel_Booking" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Bookings-Cancel_Booking-v1" data-group="Bookings" data-name="Cancel_Booking" data-version="v1">
+    <div class="pull-left">
+        <h1>Bookings : Booking cancellation</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API cancels booking</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/bookings/{booking_id}</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Booking Id</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Bookings-Cancel_Booking-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Bookings-Cancel_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">204</span><span class="pln"> </span><span class="typ">No</span><span class="pln"> </span><span class="typ">Content</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">BK-0001</td>
+            <td>
+                <p>Invalid Booking Id.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0002</td>
+            <td>
+                <p>An error occurred while processing the booking, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0003</td>
+            <td>
+                <p>You have not enough rights to cancel this booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0004</td>
+            <td>
+                <p>Booking can not be cancelled. The trip has either started or ended.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0016</td>
+            <td>
+                <p>Booking already cancelled.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0027</td>
+            <td>
+                <p>Application can not access requested booking.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Bookings-Cancel_Booking-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Bookings-Cancel_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BK-0001"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Invalid Booking Id."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <div id="api-Bookings-Booking_Details" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Bookings-Booking_Details-v1" data-group="Bookings" data-name="Booking_Details" data-version="v1">
+    <div class="pull-left">
+        <h1>Bookings : Booking Details</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API fetch booking details</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/bookings/{booking_id}</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Booking Id</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Unique identifier for the requested booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">status</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Status of the Booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                Integer
+            </td>
+            <td>
+                <p>Unique identifier for the product used for booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">product_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Name of the product.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">vehicle_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of the vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;model</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Model of Vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;make</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Make of Vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;license_plate</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>License Plate Number of Vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">driver_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;driver_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Name of Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;driver_number</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Phone Number of Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;driver_picture</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Url of Picture of Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;notes_to_driver</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Notes To Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">pickup_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of pickup.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Latitude of pickup.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Longitude of pickup.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Nick Name of pickup.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">dropoff_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of drop off.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Latitude of Drop off.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Longitude of Drop off.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;nickname</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Nick Name of Drop off.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Bookings-Booking_Details-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Bookings-Booking_Details-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK
+  </span><span class="pun">{</span><span class="pln">
+     </span><span class="str">"booking_id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"ABCDEG"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"TRIP_ENDED"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"product_id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">124</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"product_name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Economy car"</span><span class="pun">,</span><span class="pln">
+     </span><span class="str">"vehicle_details"</span><span class="pun">:{</span><span class="pln">
+         </span><span class="str">"model"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Corolla"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"make"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Toyota"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"license_plate"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LEC-35"</span><span class="pln">
+         </span><span class="pun">},</span><span class="pln">
+     </span><span class="str">"driver_details"</span><span class="pun">:{</span><span class="pln">
+         </span><span class="str">"driver_name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"khan 2"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"driver_number"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"96200000"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"driver_picture"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://s3-eu-west-1.amazonaws.com/cloud-driver/images/6249.jpg"</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"notes_to_driver"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Be on time please"</span><span class="pln">
+         </span><span class="pun">},</span><span class="pln">
+     </span><span class="str">"pickup_details"</span><span class="pun">:{</span><span class="pln">
+         </span><span class="str">"latitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">31.46425</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"longitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74.3889</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"nickname"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"qwe"</span><span class="pln">
+         </span><span class="pun">},</span><span class="pln">
+     </span><span class="str">"dropoff_details"</span><span class="pun">:{</span><span class="pln">
+         </span><span class="str">"latitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">31.425673</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"longitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74.26589</span><span class="pun">,</span><span class="pln">
+         </span><span class="str">"nickname"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"zxc"</span><span class="pln">
+     </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">BK-0001</td>
+            <td>
+                <p>Invalid Booking Id.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0002</td>
+            <td>
+                <p>An error occurred while processing the booking, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0019</td>
+            <td>
+                <p>You are not authorized to view this booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0027</td>
+            <td>
+                <p>Application can not access requested booking.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Bookings-Booking_Details-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Bookings-Booking_Details-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"BK-0001"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Invalid Booking Id."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <div id="api-Bookings-Track_Booking" class="row">
+            <div class="col-lg-12">
+                <p>
+    </p><article id="api-Bookings-Track_Booking-v1" data-group="Bookings" data-name="Track_Booking" data-version="v1">
+    <div class="pull-left">
+        <h1>Bookings : Track a booking</h1>
+    </div>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button class="version btn dropdown-toggle" data-toggle="dropdown">
+                <strong>v1</strong> <span class="caret"></span>
+            </button>
+            <ul class="versions dropdown-menu open-left">
+                <li class="disabled"><a href="#">compare changes to:</a></li>
+                <li class="version"><a href="#">v1</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <p></p><p>API tracks booking</p><p></p>
+
+    <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">http://qa-interface.careem-engineering.com/v1/bookings/{booking_id}/track</span></code></pre>
+
+    <p>
+        Permission:
+        none
+    </p>
+
+
+    
+    <h2>Header</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">Authorization</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Application Token.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Parameter</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">booking_id</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Booking Id</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    
+    <h2>Success 200</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">eta</td>
+            <td>
+                Long
+            </td>
+            <td>
+                <p>Eta for reaching pickup location in case of trip not started, in case of trip started Eta for reaching dropoff and "-1" in case of no Eta.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">status</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Status of the Booking</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">product_id</td>
+            <td>
+                Integer
+            </td>
+            <td>
+                <p>Unique identifier for the product used for booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">product_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Name of the product.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">vehicle_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of the vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;license_plate</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>License Plate Number of Vehicle.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">driver_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;driver_name</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Name of Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;driver_number</td>
+            <td>
+                String
+            </td>
+            <td>
+                <p>Phone Number of Driver.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">driver_location_details</td>
+            <td>
+                Object
+            </td>
+            <td>
+                <p>Details of Driver's Location, will be "null" if trip ended.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;latitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Latitude of Driver's Location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">&nbsp;&nbsp;longitude</td>
+            <td>
+                Float
+            </td>
+            <td>
+                <p>Longitude of Driver's Location.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# success-examples-Bookings-Track_Booking-v1-0">Success-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="success-examples-Bookings-Track_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">  HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> OK
+</span><span class="pun">{</span><span class="pln">
+      </span><span class="str">"eta"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">543</span><span class="pun">,</span><span class="pln">
+      </span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"DRIVER_COMING"</span><span class="pun">,</span><span class="pln">
+      </span><span class="str">"vehicle_details"</span><span class="pun">:{</span><span class="pln">
+              </span><span class="str">"license_plate"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"LEC-35"</span><span class="pln">
+          </span><span class="pun">},</span><span class="pln">
+      </span><span class="str">"driver_details"</span><span class="pun">:{</span><span class="pln">
+              </span><span class="str">"driver_name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"My Driver"</span><span class="pun">,</span><span class="pln">
+              </span><span class="str">"driver_number"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"9234849"</span><span class="pln">
+          </span><span class="pun">},</span><span class="pln">
+      </span><span class="str">"driver_location_details"</span><span class="pun">:{</span><span class="pln">
+              </span><span class="str">"latitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">31.404783</span><span class="pun">,</span><span class="pln">
+              </span><span class="str">"longitude"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74.299706</span><span class="pln">
+          </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+    
+    <h2>Error 4xx</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="code">BK-0001</td>
+            <td>
+                <p>Invalid Booking Id.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0002</td>
+            <td>
+                <p>An error occurred while processing the booking, please try again in a short while.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0012</td>
+            <td>
+                <p>The booking does not have the required status that enables it to be tracked, Either the driver is not on his way or the trip has ended or canceled</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0013</td>
+            <td>
+                <p>No Driver assigned to the booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0014</td>
+            <td>
+                <p>No car is assigned to the booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0015</td>
+            <td>
+                <p>Unable to locate driver's location.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0019</td>
+            <td>
+                <p>You are not authorized to view this booking.</p>
+                
+                
+                            </td>
+        </tr>
+        <tr>
+            <td class="code">BK-0027</td>
+            <td>
+                <p>Application can not access requested booking.</p>
+                
+                
+                            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul class="nav nav-tabs nav-tabs-examples">
+        <li class="active">
+        <a href="# error-examples-Bookings-Track_Booking-v1-0">Error-Response:</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="error-examples-Bookings-Track_Booking-v1-0">
+            <pre class="prettyprint language-json prettyprinted" data-type="json"><code><span class="pln">HTTP</span><span class="pun">/</span><span class="lit">1.1</span><span class="pln"> </span><span class="lit">400</span><span class="pln"> </span><span class="typ">Bad</span><span class="pln"> </span><span class="typ">Request</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+  </span><span class="str">"code"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0001"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"message"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Invalid Booking Id."</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+        </div>
+    </div>
+
+
+
+    </article>
+<p></p>
+                <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+            <div id="footer">
+    <div id="api-_footer"><h1>Reference</h1>
+<p>Below is a reference to all the enumerated types you will encounter for making requests and getting responses.</p>
+<h2>Booking Status</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UPCOMING</td>
+<td>Booking has been scheduled. No driver has been assigned.</td>
+</tr>
+<tr>
+<td>DRIVER_ASSIGNED</td>
+<td>Driver has been assigned to the booking.</td>
+</tr>
+<tr>
+<td>DRIVER_COMING</td>
+<td>Driver is on the way.</td>
+</tr>
+<tr>
+<td>DRIVER_HERE</td>
+<td>Driver has arrived at the pick-up location.</td>
+</tr>
+<tr>
+<td>TRIP_STARTED</td>
+<td>Trip has been started.</td>
+</tr>
+<tr>
+<td>TRIP_ENDED</td>
+<td>Trip has been ended.</td>
+</tr>
+<tr>
+<td>CANCELED</td>
+<td>Booking has been canceled.</td>
+</tr>
+<tr>
+<td>REJECTED_DUE_TO_CAPACITY</td>
+<td>Booking was rejected because the car capacity for the said time has been reached.</td>
+</tr>
+<tr>
+<td>REJECTED_DUE_TO_BLACK_OUT</td>
+<td>Booking was rejected because the said date was marked as a black-out date.</td>
+</tr>
+<tr>
+<td>REJECTED_DUE_TO_NO_DRIVERS</td>
+<td>Booking was rejected because no drivers were found. This is primarly for NOW bookings.</td>
+</tr>
+</tbody>
+</table>
+<h2>Booking Type</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOW</td>
+<td>Ride will be booked for now. Current time will be set as Pickup time. If driver will be available in nearby location then it will be assigned to booking.</td>
+</tr>
+<tr>
+<td>LATER</td>
+<td>Ride will be booked for later time. User can select date and time for which s/he wants to book a ride.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+</div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+
+<script data-main="jsp/api/api.js" src="./Careem Developer Portal_files/require.min.js.download"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="./Careem Developer Portal_files/bootstrap.min.js(1).download"></script>
+
+
+
+
+<div>
+
+	
+		<title></title>
+		
+		<style type="text/css">
+			
+			/* DAP Download BAR */
+			div#DDB_DAPBar {width: 100%;height: 0px;border-top: 1px solid #d6d6d6;background-color: #d6d6d6;position: absolute;left: 0px;bottom: 0;z-index: 250000;text-align: left; color: #000000; visibility: hidden; font-family: 'Segoe UI'; direction: ltr; line-height: 15px;}
+			
+			div#DDB_DAPBar_control{position: absolute; right: 13px; top: 0px; margin-top: 14px;}
+			div#DDB_DAPBar_close{float:left; position: relative;z-index: 250001;width: 10px; height: 10px; margin: 1px 0px 0px 19px;}
+			div#DDB_DAPBar_close:hover{background-position: bottom !important;}
+			div#DDB_DAPBar .DDB_dwlbtnwrap{height: 50px;width: 257px; font-size: 15px; position: relative; float: left; margin: 16px 0px 0px 50px;}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .dwlbtn{text-align: center; height: 50px;text-shadow: 0px -1px 0px #003716; font-weight: bold;background-color: #00a600;
+				background: -moz-linear-gradient(#00d004, #005600); 
+				background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #00d004),color-stop(1, #005600));
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d004', endColorstr='#005600',GradientType=0 );border: 1px solid #106b18;
+				background-image: -o-linear-gradient(rgb(0,208,4),rgb(0,86,0));
+			}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .dwlbtn a{text-decoration: none; color: #ffffff !important;display: block; padding-top: 14px; height: 36px; font-size: 22px;}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .mask{overflow: hidden;}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .roundedCorners{border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .dwlbtn:hover {background-color: #00d004;text-shadow: 0px -1px 0px #003716;border: 1px solid #106b18;
+				background: -moz-linear-gradient(#005600, #00d004);
+				background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #005600),color-stop(1, #00d004));
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005600', endColorstr='#00d004',GradientType=0 );
+				background-image: -o-linear-gradient(rgb(0,86,0),rgb(0,208,4));
+			}
+			div#DDB_DAPBar .DDB_dwlbtnwrap .gradient{filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005600', endColorstr='#00d004',GradientType=0 ); /* IE6-9*/ }
+			div#DDB_DAPBar .clearall{ clear: both; line-height: 0px; height: 0px; font-size: 0px;}
+			div#DDB_DAPBar .ddbinst{font-size: 18px; padding-top: 10px; float: left; width: 640px;}
+			div#DDB_DAPBar .ddbinst a{text-decoration: none; color :#000000;}
+			div#DDB_DAPBar .ddb_dapinstall{float: left; padding-top: 10px;}
+			div#DDB_DAPBar .ddbInstallWrap{line-height: 20px; margin: 0px auto; width: 950px;}
+			div#DDB_DAPBar .ddbInstallWrap img{float: left; margin-right: 10px; border: 0px;width: 65px; height: 65px;}
+			
+			#DDB_DAPBarLogo {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAADCNJREFUeNrsWwtwVNUZvufcu3cf2SSELORByIAQJD4QqxbQMo6OTmVw0FYd7dBOZzo6llZrW1tnOhbQqdhOp1aHh6+qtDwqiIhWeZSHPIQBgiAkJIAhIZCEhCSbfb/u6/Sc3XNvzm52s5vNgsEmM//ce8+9u9zv+//znf//zwIQQtz/+x8YIWGEhBESRkgYISGBhG85Pti5bvx3pAhXbOPBdKRyRZoMgAWC7+Fzt9evra78zYUNwrfFma2flk4SIbhFhPBmfJwtIL6SR6ACKfiuyHHRowK4oII6v2qOfPDyJ+512+tCTYSoq5EEcOozx+jCPP5WmwncZebhbBGAG6DGFSAFYrCAQzIOcBVEgSMZf0LluNZL6pm99eHdP3ur+xM80o2tC1sQm3a1TAd46XDxPWaev9ssgNkWAd5OvBozLgY8eg6jBMS8HvN+80Wl+R87fJte+cyzH492YLuEzUUJIE+i4UoC+PKz0cXXVPIPmQXuAYvA3QERLCDeJUB18DGgjPcV6n1sR85Ejixe5964szbUgJ9sp+A92EKx2BiewtgHXOQesFnBHE6jviKgVR18n/c5GgEx78fGazD4F953b9hxIlRLwfdg82ILk9AfrqsD33XM8bDVAh6054HHoiOI+kqJzW3D+2RM1sMf9hGBx2pOY/D/NsC30TlPwEv0G4fdEgn2bShyTKsWns2zgvmCwFUYd3Tvx4V+jABD8GSdBBz2GPziNRj88cGD/6ZIAKc+L66qKIUvGl7X/6LeR0zoM95XGO/Tud/UpjS/vdX30SubPLvwE63ZgL/SJMCLRxz3FhWCRRYzuL3fXdb7hABZnwb9535Tm9r89has9h959lHwF7G5swF/pUiA5w4U31bigK/iOT+r313d+7roqYnKr4OHOL1Drg/2BD79xXLnRxR8JwWfUvC+aRJShz3rfTW98oeCXHjX0fDuB17o+id++gKd9725AH85SRB6a8csKbCDBTzP5Sf1voYSwMN+3idju4+F9z61vHft6Vb5a0pAD01y1OFaQMHGvcXfHV8O3zWL4LoBva8CBryu/Fws44uKntr0y6W9b+04GjpGQ5+kuT6qHMO2iox6HwvfcymfUJN4X433vtvNud78j2/98++5N+M752ma641lB9xlq/mHSgL45J3CsffOFjclFT49/BXG+2rytPfQLuXIxuWRnXda80aN4wWUD/mQGQDW864Q0o5bAVQnXPj681zpwVBJgHXbR8+8rkrYCiFXkNz7urHCF1/0tDejzoIVeaWac3CvQgrDsKYdkDm0p0WRN959scV5pZdIvr3G8XO89P05pfgZ637qomfzgfDWeQu71k02ibZnCotvnWfLfzAfwuJsXghHyVa/pq26tvXshsEKZzYk8K2HHAsqyuCygb3PCh9gcn4y95Hrt6+7l/5ru38PTXbIeziwlf+tuHTefHvhw3gqWDJ9Wdb9EkL1bYr8+K3tzTWZThmQMwJQauVnix6i/A8u7FrScF4+Tpc9L/20DVsRtoopJrF65Zhxz1SL5hsG86KI8UO7qj41vbXxzUyiAuSEgGRFT2Lai1PeL0/Jh2c83bEEP3mGlrmhBG/x2OzYSrFN3lU2YeHNZsuMTF/UyL/w0+SII+LpWW1n30hHBJ+pCJ7cMXru5An86uRFDy14ZL6PBDlW9ZGUF0mQO0oI+FXHYvyJekpAOImQIVoDkJwgsMrvPvmDvIJpxTxfEkcCAHGGADDA6wQo+JtMUJhtgWDNwXDAOyC4TKbM0hfzy6dOEtYm9b4MGQNRCEgCUeBRiwDuaINECFhECSAaEBlAyRG9T3KEU493ty+JIBRCA3g/+hoARpMJGRFdAPgckHv5syz2R9M5OxMSxJ/80LLSWAUQpZkAlqn3MVhOYryPz7UIIQByp5qV2hm/jhLQQFtccobRR567dFKK1NVK4X2pJIiAlaMRkHgeMw2AKnwwD5jppZsGBz8umjuqANwTP+kgU/kxc5+2ufSyNxJCofl/7SYacHqQBBhij41kED3sVDCybyb0VQpexfQonLEacyENmdLhTEeCubKc/2l80QMYEpi0V4Z9dT9tdW+rCW2sbZFqsyTAiLtxgmkC0GsvOvcNLUZ9QqgDN87xvXOK1Jg2509z35ZnAdfHvpnN+ZM3PNhuL4mKTYeCmykBUrZZ6dqxFbeU8cIdqbwfBx4hAzwZD2MteaGnbVu6fz9tJBRawCROZpseXMpev97v5+h1t0slRVAgy3QWLHOUld5ptS3TODbcaR+GXsd53oiM2NiJSHAL7T1IQxFGwe8B3VHhI0RIHFV/GKf+JPSRca/veuH9RXcNofoz3WezLzUDeG1M8GJhL1Pllxjxi57j6UpWBplGQreitD3bdX4p7T6pQyFBPX8e1bNLn5aMALKgSYAujbFrcpxeKv7hT3OLyrLITE1nK6vWFEDhIUPtka7+CeB1AvQgxM8F8TRY4+35Oy3H/WmzwHQv4/Yi3/0zLHN4jTdFEx85thxGwRtvFH+tH4EMxJtLxDk3logfbjoZDGRKQGPllLV2KDyiMMAUnAcY14zwKVgHVPY5fPzY37vifW/PRtqKiwyVBK3urBzs7kWX7rnJegevEiIAA5TuAbDgpdjbxJ5DnACAY+Jo09wbS8WNaYgAq8ZWlLzqKPuvFfLf18Uvpvw4GgDoA68DpkKoTwGiB9sC7vfecHeSfuS5TPUoLQmEyaNnJOclJ+q4ZaK5Ok+A+Sm9LyVc68ICwZgpDvHJJ2fmu1/b7/0qyYvB/eOumXmT2bqTB/A6hSHAAAlAHHhWDGMRQQhwrVzm6ngXDzXSwixnVSSkRU0ltknLHy9+6JHb7PcXirCI07e+mV1g8jZogH86JKODvoi2dOJfWvW6X6gfX/VcES8sUdOs+6zysytFSNPCu4Oe95e7Ot7BQ6Qp6xpMTyFTwSJEkPqeNDzIlln5/Fn2m358m/3OqWPEqhIrXxYFr2a+FigaavNH0JbIGus0vALMVJIsfYkEsOD18I8gLYTD/+WdAfdOPHx2sARk1U+gdX8httG0EVJU5TCVzJlqnTx7gqXaZoJ5lUXCuJRfgJ18rlc5Wd1pm25rEyfKPhDnfdp+MM6VRPA6IXhK9KjKxUU9Fxa2ypFjdCXwZtOOz7a9RiJDxGalpNjolLHTMXMKvYG/HzVm2o/shY+WCKapqTI/JYGAePCx+qAm7N/6Uk/rmzT82+h+RFbN11y03AFDikizUCHhu8Ej9sLiPxaNWTKWN81LzPnVNOCNa+x9r6a6PvQ539nkc27FQ010IzYylJb8ldiQFc5WTnnJBvkF+C0LWPFLFLnU4GPePxz2b1vl6VqPw7+Ohr87Fxsyl5ME/sz4qifyIXweAFjRv+TtX/El1QF8flGRmtb7uld/HvB8gYdaOOZHV8N1LxKeGj/5XjvkF4sAzDJCPsOlzzjHR5+muNb7nCtx6O+hniddKQ/9WM52pHJJAviifOKUCSbTaxYA70sErySZ+0nBE4lXVdeeoGczXvo+ZsC76NzXcu21nAjj4XHXVJXzwotWCB9LLHmTLX2pvN+uSM3HwoEDK1wdn1LFJw1ZZ5Ku9LAhAWwurXRUi+bf4dBfgL8oP07tk8z/VOAbpNCX+4PevVj19d8adtI+QM634XNFQhT89aLlWTuEC7io4oOEzC55+LOCR0L+YNi/Z42ne3ubIrVQ4N1cit8aDhcS4sBDfblLEf5KEu+HEArXRYI1uNLbuz3g0XuP+i9M/ZdrzueChH7gjf3WpN3eeO97sMcbpHBdvRRqeNvdtY/r+12xi6a5wVyrfS5JAMcqJk0eBeETBZB/koDnmGbnQN4/jwWuNhI6cSgUqNsScNdTwL3UPBS49E14PVMSDLXPw2qfuNmRbN1vwaDPyJHGI+Fgw2qv8zgF2st4O0DneeRKzvVsSIgmOaMgv8gM4n9ryLa6mzFgp6I6mxS5rV4Kn3vP6zxBgbqp6SEeovuN8nDx+EAk8I04vS3E6a0AQIWMUKBHUy8oCPEtitzh07TQ/nDwNB7zfej3NFKv6uajFqSAw8MpzAdDgkj7AuW0aWKl4woN3xDjWda7EmNXFeikkcD0A0Rmx5HVOplJ+K5qwCN/qSJh5L8EjpAwQsIICSMkxP/9T4ABAA376oWIUtdfAAAAAElFTkSuQmCC) no-repeat 0 0;float: left;width: 65px; height: 65px;}
+		</style>
+	
+	
+		<div id="DDB_DAPBar">
+			<div id="DDB_DAPBar_list"></div>
+			<div id="DDB_DAPBar_control"></div>
+		</div>
+		<!--<div id="DDB_DAPBar" style="visibility: visible; height: 82px;">
+			<div id="DDB_DAPBar_list"><div class="ddbInstallWrap"><div class="ddbinst"><div class="ddb_dapinstall"><strong>DAP Extenstion:</strong><br>To accelerate your downloads, install Download Accelerator Plus (DAP)</div><div class="clearall"></div></div><div class="DDB_dwlbtnwrap" title="Download Accelerator Plus (DAP) Free - Download button"><div class="mask roundedCorners"><div class="roundedCorners dwlbtn"><a href="http://download.speedbit.com/mag/dap10_gws_setup.exe">DOWNLOAD DAP</a></div></div></div><div class="clearall"></div></div></div>
+			<div id="DDB_DAPBar_control"><img src="http://www.speedbit.com/img/dapchrome/ddb-close.png" style="width: 65px; height: 65px;" alt="Close" /></div>
+		</div>-->
+	
+</div></body></html>
