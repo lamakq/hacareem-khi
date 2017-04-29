@@ -2,10 +2,10 @@
 
 ## Schedule
 
+### Day 1
 - 2 PM Lunch
 - 4 PM Tea
-- 6 PM Design doc submission
--- *TODO: How to submit?*
+- 6 PM Design doc submission // *TODO: How to submit?*
 - 8 PM Dinner
 
 ## Problem Statement 1: Book A Single Tap Ride
