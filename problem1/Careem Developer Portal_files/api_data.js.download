@@ -1,0 +1,1830 @@
+define({ "api": [
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "GET",
+    "url": "/v1/bookings/{booking_id}",
+    "title": "Booking Details",
+    "name": "Booking_Details",
+    "description": "<p>API fetch booking details</p>",
+    "version": "v1",
+    "group": "Bookings",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Booking Id</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Unique identifier for the requested booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Status of the Booking</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier for the product used for booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "product_name",
+            "description": "<p>Name of the product.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "vehicle_details",
+            "description": "<p>Details of the vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "vehicle_details.model",
+            "description": "<p>Model of Vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "vehicle_details.make",
+            "description": "<p>Make of Vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "vehicle_details.license_plate",
+            "description": "<p>License Plate Number of Vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "driver_details",
+            "description": "<p>Details of driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.driver_name",
+            "description": "<p>Name of Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.driver_number",
+            "description": "<p>Phone Number of Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.driver_picture",
+            "description": "<p>Url of Picture of Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.notes_to_driver",
+            "description": "<p>Notes To Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "pickup_details",
+            "description": "<p>Details of pickup.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "pickup_details.latitude",
+            "description": "<p>Latitude of pickup.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "pickup_details.longitude",
+            "description": "<p>Longitude of pickup.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "pickup_details.nickname",
+            "description": "<p>Nick Name of pickup.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "dropoff_details",
+            "description": "<p>Details of drop off.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "dropoff_details.latitude",
+            "description": "<p>Latitude of Drop off.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "dropoff_details.longitude",
+            "description": "<p>Longitude of Drop off.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "dropoff_details.nickname",
+            "description": "<p>Nick Name of Drop off.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n  {\n     \"booking_id\": \"ABCDEG\",\n     \"status\": \"TRIP_ENDED\",\n     \"product_id\": 124,\n     \"product_name\": \"Economy car\",\n     \"vehicle_details\":{\n         \"model\": \"Corolla\",\n         \"make\": \"Toyota\",\n         \"license_plate\": \"LEC-35\"\n         },\n     \"driver_details\":{\n         \"driver_name\": \"khan 2\",\n         \"driver_number\": \"96200000\",\n         \"driver_picture\": \"https://s3-eu-west-1.amazonaws.com/cloud-driver/images/6249.jpg\",\n         \"notes_to_driver\": \"Be on time please\"\n         },\n     \"pickup_details\":{\n         \"latitude\": 31.46425,\n         \"longitude\": 74.3889,\n         \"nickname\": \"qwe\"\n         },\n     \"dropoff_details\":{\n         \"latitude\": 31.425673,\n         \"longitude\": 74.26589,\n         \"nickname\": \"zxc\"\n     }\n  }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0001",
+            "description": "<p>Invalid Booking Id.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0002",
+            "description": "<p>An error occurred while processing the booking, please try again in a short while.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0019",
+            "description": "<p>You are not authorized to view this booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0027",
+            "description": "<p>Application can not access requested booking.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"BK-0001\",\n  \"message\": \"Invalid Booking Id.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/BookingController.java",
+    "groupTitle": "Bookings",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/bookings/{booking_id}"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "DELETE",
+    "url": "/v1/bookings/{booking_id}",
+    "title": "Booking cancellation",
+    "name": "Cancel_Booking",
+    "description": "<p>API cancels booking</p>",
+    "version": "v1",
+    "group": "Bookings",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Booking Id</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 204 No Content",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0001",
+            "description": "<p>Invalid Booking Id.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0002",
+            "description": "<p>An error occurred while processing the booking, please try again in a short while.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0003",
+            "description": "<p>You have not enough rights to cancel this booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0004",
+            "description": "<p>Booking can not be cancelled. The trip has either started or ended.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0016",
+            "description": "<p>Booking already cancelled.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0027",
+            "description": "<p>Application can not access requested booking.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"BK-0001\",\n  \"message\": \"Invalid Booking Id.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/BookingController.java",
+    "groupTitle": "Bookings",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/bookings/{booking_id}"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "POST",
+    "url": "/v1/bookings",
+    "title": "Booking-Create",
+    "name": "Create_Booking",
+    "description": "<p>API initiates request for booking</p>",
+    "version": "v1",
+    "group": "Bookings",
+    "parameter": {
+      "fields": {
+        "Body": [
+          {
+            "group": "Body",
+            "type": "Integer",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier of a product</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Object",
+            "optional": false,
+            "field": "pickup_details",
+            "description": "<p>Object that contains pickup details.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "pickup_details.longitude",
+            "description": "<p>Longitude component start location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "pickup_details.latitude",
+            "description": "<p>Latitude component start location</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "pickup_details.nickname",
+            "description": "<p>The beginning or “pickup” nickname label.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Object",
+            "optional": false,
+            "field": "dropoff_details",
+            "description": "<p>object that contains drop-off details.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "dropoff_details.longitude",
+            "description": "<p>Longitude component end location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "dropoff_details.latitude",
+            "description": "<p>Latitude component end location</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "dropoff_details.nickname",
+            "description": "<p>The beginning or “drop-off” nickname label.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "driver_notes",
+            "description": "<p>Notes to driver.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "allowedValues": [
+              "\"NOW\"",
+              "\"LATER\""
+            ],
+            "optional": false,
+            "field": "booking_type",
+            "description": "<p>Now or Later booking type</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Integer",
+            "optional": false,
+            "field": "pickup_time",
+            "description": "<p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "promo_code",
+            "description": "<p>Promo code to avail any promotion.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Object",
+            "optional": false,
+            "field": "customer_details",
+            "description": "<p>The object that contains customer details</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "customer_details.uuid",
+            "description": "<p>Unique customer identifier, should be maximum of 15 characters.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "customer_details.name",
+            "description": "<p>Name of customer</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "customer_details.email",
+            "description": "<p>email address of customer</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "customer_details.phone_number",
+            "description": "<p>Phone number of customer</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "surge_confirmation_id",
+            "description": "<p>The unique identifier of the surge session for a user.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Unique identifier for the requested booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "surge_multiplier",
+            "description": "<p>If booking type is <code>NOW</code>, The multiplier that will apply on top of the estimated price provided If booking type is <code>LATER</code>, The maximum multiplier that might apply at the time when the booking is taking place.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 201 Created\n {\n     \"booking_id\": \"2VLRXFGAVV\",\n     \"surge_multiplier\": 1.7\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0007",
+            "description": "<p>Booking detail is missing</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0002",
+            "description": "<p>Arguments are invalid.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0001",
+            "description": "<p>No Products are available in the location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0005",
+            "description": "<p>Please provide a pickup time for later booking</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0008",
+            "description": "<p>Customer is blocked</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0003",
+            "description": "<p>Please provide a valid pickup location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0001",
+            "description": "<p>Invalid latitude, can't have values out of (-90,90)</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0005",
+            "description": "<p>Invalid longitude, Can't have values out of (-180/180)</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0004",
+            "description": "<p>Invalid product id</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "SA-0001",
+            "description": "<p>Careem does not operate in this area</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0004",
+            "description": "<p>The selected dropoff location is not supported</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0005",
+            "description": "<p>Product cannot be used for Later booking</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0006",
+            "description": "<p>Product cannot be used for Now booking</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0009",
+            "description": "<p>Unable to create cash booking</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0010",
+            "description": "<p>The selected pickup time is not allowed.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0011",
+            "description": "<p>No specified token exists</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0017",
+            "description": "<p>Promo code does not apply to this booking, Either it is not applicable or expired or limit has been exceeded</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0020",
+            "description": "<p>This Surge confirmation id has already been used.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0021",
+            "description": "<p>Duplicate Booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0022",
+            "description": "<p>Surge offer has expired. Please provide updated Surge Confirmation id.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0023",
+            "description": "<p>Pick up time differ from surge confirmation.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0024",
+            "description": "<p>Customer UUID is missing.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0025",
+            "description": "<p>Booking type is invalid, should be either NOW or LATER.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0031",
+            "description": "<p>Invalid Promo Code.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0002",
+            "description": "<p>An error occurred while processing the booking, please try again in a short while.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0033",
+            "description": "<p>Customer UUID is too long, it should be of maximum 15 characters.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0034",
+            "description": "<p>No free captains found to serve this booking.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"BK-0011\",\n  \"message\": \"No specified token exists\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/BookingController.java",
+    "groupTitle": "Bookings",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/bookings"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "GET",
+    "url": "/v1/bookings/{booking_id}/track",
+    "title": "Track a booking",
+    "name": "Track_Booking",
+    "description": "<p>API tracks booking</p>",
+    "version": "v1",
+    "group": "Bookings",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Booking Id</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Long",
+            "optional": false,
+            "field": "eta",
+            "description": "<p>Eta for reaching pickup location in case of trip not started, in case of trip started Eta for reaching dropoff and &quot;-1&quot; in case of no Eta.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "status",
+            "description": "<p>Status of the Booking</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier for the product used for booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "product_name",
+            "description": "<p>Name of the product.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "vehicle_details",
+            "description": "<p>Details of the vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "vehicle_details.license_plate",
+            "description": "<p>License Plate Number of Vehicle.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "driver_details",
+            "description": "<p>Details of driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.driver_name",
+            "description": "<p>Name of Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "driver_details.driver_number",
+            "description": "<p>Phone Number of Driver.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "driver_location_details",
+            "description": "<p>Details of Driver's Location, will be &quot;null&quot; if trip ended.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "driver_location_details.latitude",
+            "description": "<p>Latitude of Driver's Location.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Float",
+            "optional": false,
+            "field": "driver_location_details.longitude",
+            "description": "<p>Longitude of Driver's Location.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "  HTTP/1.1 200 OK\n{\n      \"eta\": 543,\n      \"status\": \"DRIVER_COMING\",\n      \"vehicle_details\":{\n              \"license_plate\": \"LEC-35\"\n          },\n      \"driver_details\":{\n              \"driver_name\": \"My Driver\",\n              \"driver_number\": \"9234849\"\n          },\n      \"driver_location_details\":{\n              \"latitude\": 31.404783,\n              \"longitude\": 74.299706\n          }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0001",
+            "description": "<p>Invalid Booking Id.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0002",
+            "description": "<p>An error occurred while processing the booking, please try again in a short while.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0012",
+            "description": "<p>The booking does not have the required status that enables it to be tracked, Either the driver is not on his way or the trip has ended or canceled</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0013",
+            "description": "<p>No Driver assigned to the booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0014",
+            "description": "<p>No car is assigned to the booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0015",
+            "description": "<p>Unable to locate driver's location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0019",
+            "description": "<p>You are not authorized to view this booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0027",
+            "description": "<p>Application can not access requested booking.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"0001\",\n  \"message\": \"Invalid Booking Id.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/BookingController.java",
+    "groupTitle": "Bookings",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/bookings/{booking_id}/track"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "PUT",
+    "url": "/v1/bookings/{booking_id}",
+    "title": "Booking-Update",
+    "name": "Update_Booking",
+    "description": "<p>API updates booking. Booking cannot be updated if it is either cancelled or rejected or the trip has ended.</p>",
+    "version": "v1",
+    "group": "Bookings",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "booking_id",
+            "description": "<p>Unique identifier for the booking.</p>"
+          }
+        ],
+        "Body": [
+          {
+            "group": "Body",
+            "type": "Object",
+            "optional": false,
+            "field": "pickup_details",
+            "description": "<p>Object that contains pickup details. Cannot be updated once driver is on his way</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Float",
+            "optional": false,
+            "field": "pickup_details.latitude",
+            "description": "<p>Latitude component start location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Float",
+            "optional": false,
+            "field": "pickup_details.longitude",
+            "description": "<p>Longitude component start location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "pickup_details.nickname",
+            "description": "<p>The beginning or “pickup” nickname label.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Object",
+            "optional": false,
+            "field": "dropoff_details",
+            "description": "<p>Object that contains drop-off details. Cannot be updated once trip has ended.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "dropoff_details.latitude",
+            "description": "<p>Latitude component end location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "float",
+            "optional": false,
+            "field": "dropoff_details.longitude",
+            "description": "<p>Longitude component end location.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "dropoff_details.nickname",
+            "description": "<p>The beginning or “drop-off” nickname label.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "driver_notes",
+            "description": "<p>Notes to driver.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "Integer",
+            "optional": false,
+            "field": "pickup_time",
+            "description": "<p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER. Cannot be updated once driver is on assigned.</p>"
+          },
+          {
+            "group": "Body",
+            "type": "String",
+            "optional": false,
+            "field": "promo_code",
+            "description": "<p>Promo code to avail any promotion.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0001",
+            "description": "<p>Invalid Booking Id.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0007",
+            "description": "<p>Booking detail is missing.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0002",
+            "description": "<p>Arguments are invalid.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0005",
+            "description": "<p>Please provide a pickup time for later booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0003",
+            "description": "<p>Please provide a valid pickup/drop off location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0001",
+            "description": "<p>Invalid latitude, can't have values out of (-90,90).</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0005",
+            "description": "<p>Invalid longitude, Can't have values out of (-180/180).</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "SA-0001",
+            "description": "<p>Careem does not operate in this area</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0004",
+            "description": "<p>The selected dropoff location is not supported</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0009",
+            "description": "<p>Unable to create cash booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0010",
+            "description": "<p>The selected pickup time is not allowed.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0017",
+            "description": "<p>Promo code does not apply to this booking, Either it is not applicable or expired or limit has been exceeded</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0021",
+            "description": "<p>Duplicate Booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0027",
+            "description": "<p>Application can not access requested booking</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0028",
+            "description": "<p>Pickup time cannot be updated. Driver is assigned to the booking.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0029",
+            "description": "<p>Booking cannot be updated, either it is rejected or cancelled or the trip has ended.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0030",
+            "description": "<p>Pickup location cannot be updated as Driver is on his way or trip has started or ended.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0031",
+            "description": "<p>Invalid Promo Code.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "BK-0002",
+            "description": "<p>An error occurred while processing the booking, please try again in a short while.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"BK-0028\",\n  \"message\": \"Pickup time cannot be updated. Driver is assigned to the booking.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 202 Accepted",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/BookingController.java",
+    "groupTitle": "Bookings",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/bookings/{booking_id}"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "GET",
+    "url": "/v1/estimates/time",
+    "title": "Arrival Time",
+    "name": "Estimated_Arrival_Time",
+    "description": "<p>Returns ETA of closest driver for all available products in given location</p>",
+    "group": "Estimates",
+    "version": "v1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "float",
+            "optional": false,
+            "field": "start_latitude",
+            "description": "<p>Latitude component.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "float",
+            "optional": false,
+            "field": "start_longitude",
+            "description": "<p>Longitude component.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": true,
+            "field": "product_id",
+            "description": "<p>If in case you want only one specific ETA you can specify one of the product ids you received from the /products api. Make sure that the coordinates used in /products is the same used in this api call.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "int",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier representing a specific product for a given latitude &amp; longitude.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "display_name",
+            "description": "<p>Display name of product</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "long",
+            "optional": false,
+            "field": "eta",
+            "description": "<p>ETA for the product. Always in seconds</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n \"times\":\n        [\n            {\n                \"product_id\":77,\n                \"display_name\":\"Economy car\",\n                \"eta\":282\n            },\n            {\n                \"product_id\":176,\n                \"display_name\":\"Careem Karachi\",\n                \"eta\":282\n            }\n        ]\n    }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0004",
+            "description": "<p>No captains found for given product near given location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0003",
+            "description": "<p>No captains found near given location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "SA-0001",
+            "description": "<p>Careem does not operate in this area.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"ET-0003\",\n  \"message\": \"No captains found near given location.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/EstimationController.java",
+    "groupTitle": "Estimates",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/estimates/time"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "get",
+    "url": "/v1/estimates/price",
+    "title": "Trip fare, time & distance estimation API",
+    "description": "<p>Provides information about the trip itinerary you requested from a price,distance &amp; time point of view . it also tells you if this trip will apply a surge ( in case of a now booking ) or what is the maximum surge cap that will apply at the time of the trip happening in case of a later booking.</p>",
+    "name": "Trip_fare__time___distance_estimation_API",
+    "group": "Estimates",
+    "version": "v1",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application token.</p>"
+          }
+        ]
+      }
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "start_latitude",
+            "description": "<p>Latitude component start location.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "start_longitude",
+            "description": "<p>Longitude component start location.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "end_latitude",
+            "description": "<p>Latitude component of end location.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "end_longitude",
+            "description": "<p>Longitude component end location.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "allowedValues": [
+              "\"NOW\"",
+              "\"LATER\""
+            ],
+            "optional": false,
+            "field": "booking_type",
+            "description": "<p>Now or Later booking type. In case of LATER booking you have to send a pickup time (below) and it has to be 1 hour in advance or else an error will be returned.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier representing a specific product for a given latitude &amp; longitude.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pickup_time",
+            "description": "<p>This field is a <code>UNIXTIMESTAMP</code> in milliseconds. Pickup time for later booking. This field is only mandatory when booking type is LATER.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "duration",
+            "description": "<p>Estimated time for trip.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "distance",
+            "description": "<p>Estimated distance for trip.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "currency_code",
+            "description": "<p>ISO 4217 currency.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "estimate",
+            "description": "<p>Estimated price range for trip.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "low_estimate",
+            "description": "<p>Lower bound of the estimated price.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "high_estimate",
+            "description": "<p>Upper bound of the estimated price.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "metric",
+            "description": "<p>Metric can be Km or mile.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "surge_model",
+            "description": "<p>Surge model that contains surge details. This model could be NULL in case no surge really apply.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "surge_model.token",
+            "description": "<p>Surge token, you will need this once you request a booking using our new public api for booking creation.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "surge_model.surge_multiplier",
+            "description": "<p>If booking type is <code>NOW</code> The multiplier that will apply on top  of the estimated price provided If booking type is <code>LATER</code> The maximum multiplier that might apply at the time when the booking is taking place.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "surge_model.expiry_in_minutes",
+            "description": "<p>Expiry of surge,  always in minutes, you should not send an expired token when requesting a ride or else the api will respond with Error so you refresh your value and send it again. This is important to avoid a case where customer gets an unexpected surge.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"duration\":251,\n     \"distance\":2.838,\n     \"estimate\":\"AED 50.4 - 55.0\",\n     \"surge\":\n     {\n         \"token\":\"v7n6sqn04d51aj3ottuj4kdblp\",\n         \"multiplier\":1.2,\n         \"expiry_in_minutes\":1\n     },\n     \"metric\":\"KM\",\n     \"currency_code\":\"AED\",\n     \"low_estimate\":50.4,\n     \"high_estimate\":55.0\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0001",
+            "description": "<p>Booking type is invalid, should be either Now or Later.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0005",
+            "description": "<p>Pickup time is required for Later bookings.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0006",
+            "description": "<p>Pickup time for later is invalid, it should be atleast 1 hour in future.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0007",
+            "description": "<p>Product ID is invalid.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "ET-0009",
+            "description": "<p>The product you requested does not exists or is not open for public.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "SA-0001",
+            "description": "<p>Careem does not operate in this area.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0001",
+            "description": "<p>Invalid latitude, can't have values out of (-90,90).</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0002",
+            "description": "<p>Invalid longitude, Can't have values out of (-180/180).</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"SA-0001\",\n  \"message\": \"Careem does not operate in this area.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/EstimationController.java",
+    "groupTitle": "Estimates",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/estimates/price"
+      }
+    ]
+  },
+  {
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "type": "GET",
+    "url": "/v1/products",
+    "title": "Request product information",
+    "name": "GetProducts",
+    "description": "<p>API provides products with prices available for a given start location and end location.</p>",
+    "version": "v1",
+    "group": "Products",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "latitude",
+            "description": "<p>Latitude     component of location.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "longitude",
+            "description": "<p>Longitude   component of location.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Application Token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "product_id",
+            "description": "<p>Unique identifier of a product.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "capacity",
+            "description": "<p>Capacity of product. For example, 4 people.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "display_name",
+            "description": "<p>Display name of product.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "display_order",
+            "description": "<p>Display order of product.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "price_details",
+            "description": "<p>The basic price details  model.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.base_now",
+            "description": "<p>The base price for now bookingUsers age.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.base_later",
+            "description": "<p>The base price for later booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.cost_per_distance",
+            "description": "<p>The charge of per distance.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "price_details.distance_unit",
+            "description": "<p>Unit of distance i.e. Kilometer.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "price_details.currency_code",
+            "description": "<p>ISO 4217 currency.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.minimum_now",
+            "description": "<p>Starting fee for now booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.minimum_later",
+            "description": "<p>Starting fees for later booking.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.cost_per_minute",
+            "description": "<p>The cost per minute.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.cancellation_fee_later",
+            "description": "<p>The fee if a rider cancels later trip after the grace period.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "price_details.cancellation_fee_now",
+            "description": "<p>The fee if a rider cancels now the trip after the grace period.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "availibility_now",
+            "description": "<p>Flag, true or false</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "availibility_later",
+            "description": "<p>Flag, true or false</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "image",
+            "description": "<p>Image URL representing product</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "minimum_time_to_book",
+            "description": "<p>Minimum time required to book a ride for later.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "maximum_time_to_cancel_now",
+            "description": "<p>Max time allowed to cancel a now booking without penalty.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "maximum_time_to_cancel_later",
+            "description": "<p>Max time allowed to cancel a later booking without penalty.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n  \"products\":\n     [\n         {\n             \"product_id\": 1,\n             \"capacity\":6,\n             \"display_order\":1,\n             \"image\":\"\",\n             \"display_name\":\"Business Car\",\n             \"availibility_now\":true,\n             \"availibility_later\":true,\n             \"minimum_time_to_book\":20,\n             \"maximum_time_to_cancel_now\":804,\n             \"maximum_time_to_cancel_later\":804,\n             \"price_details\":\n                 {\n                     \"base_now\":0,\n                     \"base_later\":300,\n                     \"cost_per_distance\":2,\n                     \"distance_unit\":\"KM\",\n                     \"currency_code\":\"AED\",\n                     \"minimum_now\":5,\n                     \"minimum_later\":66,\n                     \"cost_per_minute\":90,\n                     \"cancellation_fee_later\":60,\n                     \"cancellation_fee_now\":0\n                 }\n         },\n         {\n\n         }\n     ]\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0001",
+            "description": "<p>No Products are available in the location.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0002",
+            "description": "<p>Arguments are invalid.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "PR-0003",
+            "description": "<p>An error occured while getting the products, please try again in a short while.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "SA-0001",
+            "description": "<p>Careem does not operate in this area.</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0001",
+            "description": "<p>Invalid latitude, can't have values out of (-90,90).</p>"
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "CO-0002",
+            "description": "<p>Invalid longitude, Can't have values out of (-180/180).</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"SA-0001\",\n  \"message\": \"Careem does not operate in this area.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "controller/ProductController.java",
+    "groupTitle": "Products",
+    "sampleRequest": [
+      {
+        "url": "https://interface.careem.com/v1/products"
+      }
+    ]
+  }
+] });

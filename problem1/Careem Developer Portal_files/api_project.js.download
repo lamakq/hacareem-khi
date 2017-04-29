@@ -1,0 +1,40 @@
+define({
+  "name": "developer-portal",
+  "version": "1.0.0",
+  "description": "Careem Developer Portal",
+  "title": "Careem Developer Portal",
+  "url": "https://interface.careem.com",
+  "sampleUrl": "https://interface.careem.com",
+  "header": {
+    "title": "Overview",
+    "content": "<h1>Overview</h1>\n<p>Here you will find reference documentation to help you start integrating Careem into your app or website as quickly as possible. The chart below explains the flow of API calls:</p>\n<h2>API Reference</h2>\n<p>(updated: February 16, 2016)</p>\n<table>\n<thead>\n<tr>\n<th>Method</th>\n<th>End point</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>GET</td>\n<td>/v1/products</td>\n<td>List of Careem product details</td>\n</tr>\n<tr>\n<td>GET</td>\n<td>/v1/estimates/time</td>\n<td>Get time estimates</td>\n</tr>\n<tr>\n<td>GET</td>\n<td>/v1/estimates/price</td>\n<td>Get price estimates</td>\n</tr>\n<tr>\n<td>POST</td>\n<td>/v1/bookings</td>\n<td>Create a booking request</td>\n</tr>\n<tr>\n<td>GET</td>\n<td>/v1/bookings/{booking_id}</td>\n<td>Get booking details</td>\n</tr>\n<tr>\n<td>PUT</td>\n<td>/v1/bookings/{booking_id}</td>\n<td>Update a booking</td>\n</tr>\n<tr>\n<td>DELETE</td>\n<td>/v1/bookings/{booking_id}</td>\n<td>Cancel a booking</td>\n</tr>\n<tr>\n<td>GET</td>\n<td>/v1/bookings/{booking_id}/track</td>\n<td>Track a booking</td>\n</tr>\n</tbody>\n</table>\n<h2>Flow of APIs</h2>\n<p><img src=\"/images/api-flow.svg\" alt=\"Flow of APIs\"></p>\n<h2>Host Urls</h2>\n<p>(updated: February 9, 2016)</p>\n<table>\n<thead>\n<tr>\n<th>Environment</th>\n<th>Host URL</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Production</td>\n<td>https://interface.careem.com</td>\n</tr>\n</tbody>\n</table>\n<h2>Example request</h2>\n<pre><code>https://interface.careem.com/v1/products? ...\n</code></pre>\n<h2>Authorization</h2>\n<p>The authorization token can be found from the dashboard, to use the token in sandbox mode it should have a prefix of <em>test-</em> so for example, if the token is <em>aabbcc123aabb</em> then for sandbox mode it should be <em>test-aabbcc123aabb</em>.</p>\n<pre><code>https://interface.careem.com/\n</code></pre>\n<h2>Error</h2>\n<p>In case of any error (error codes and description described below in each of the APIs) the API response status will not be 2xx &amp; the error json model will be as the following sample with different codes and message for each case. In any case you will always get one error at a time, there will never be (up until this point of time ) multiple errors returned in one response for the calls you make.</p>\n<pre><code>HTTP/1.1 400 Bad Request\n{\n    &quot;code&quot;: &quot;ET-0003&quot;\n    &quot;message&quot;: &quot;No captains found near given location&quot;\n}\n</code></pre>\n"
+  },
+  "footer": {
+    "title": "Reference",
+    "content": "<h1>Reference</h1>\n<p>Below is a reference to all the enumerated types you will encounter for making requests and getting responses.</p>\n<h2>Booking Status</h2>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>UPCOMING</td>\n<td>Booking has been scheduled. No driver has been assigned.</td>\n</tr>\n<tr>\n<td>DRIVER_ASSIGNED</td>\n<td>Driver has been assigned to the booking.</td>\n</tr>\n<tr>\n<td>DRIVER_COMING</td>\n<td>Driver is on the way.</td>\n</tr>\n<tr>\n<td>DRIVER_HERE</td>\n<td>Driver has arrived at the pick-up location.</td>\n</tr>\n<tr>\n<td>TRIP_STARTED</td>\n<td>Trip has been started.</td>\n</tr>\n<tr>\n<td>TRIP_ENDED</td>\n<td>Trip has been ended.</td>\n</tr>\n<tr>\n<td>CANCELED</td>\n<td>Booking has been canceled.</td>\n</tr>\n<tr>\n<td>REJECTED_DUE_TO_CAPACITY</td>\n<td>Booking was rejected because the car capacity for the said time has been reached.</td>\n</tr>\n<tr>\n<td>REJECTED_DUE_TO_BLACK_OUT</td>\n<td>Booking was rejected because the said date was marked as a black-out date.</td>\n</tr>\n<tr>\n<td>REJECTED_DUE_TO_NO_DRIVERS</td>\n<td>Booking was rejected because no drivers were found. This is primarly for NOW bookings.</td>\n</tr>\n</tbody>\n</table>\n<h2>Booking Type</h2>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>NOW</td>\n<td>Ride will be booked for now. Current time will be set as Pickup time. If driver will be available in nearby location then it will be assigned to booking.</td>\n</tr>\n<tr>\n<td>LATER</td>\n<td>Ride will be booked for later time. User can select date and time for which s/he wants to book a ride.</td>\n</tr>\n</tbody>\n</table>\n"
+  },
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  },
+  "order": [
+    "Products",
+    "GetProducts",
+    "Estimates",
+    "Estimated_Arrival_Time",
+    "Trip_fare__time___distance_estimation_API",
+    "Bookings",
+    "Create_Booking",
+    "Update_Booking",
+    "Cancel_Booking",
+    "Booking_Details",
+    "Track_Booking"
+  ],
+  "apidoc": "0.2.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2016-12-26T08:30:12.677Z",
+    "url": "http://apidocjs.com",
+    "version": "0.14.0"
+  }
+});

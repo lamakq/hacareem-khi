@@ -1,0 +1,4 @@
+/**
+ * Created by imadqamar on 1/29/16.
+ */
+!function(e){"object"==typeof module&&module.exports===e&&(e=module.exports=o),e.SEMVER_SPEC_VERSION="2.0.0";var o=function(e){this.val=parseFloat(e.replace("v",""))};o.prototype.compare=function(e){return e instanceof o||(e=new o(e,this.loose)),this.val.compare(e)},"function"==typeof define&&define.amd&&define(e)}("object"==typeof exports?exports:"function"==typeof define&&define.amd?{}:semver={});
