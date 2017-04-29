@@ -7,7 +7,7 @@
 - 4 PM Tea
 - 6 PM Design doc submission
   - **(email: lamak.qaizar@careem.com, subject: 'Hacareem KHI TEAM #X - Design Doc', attachment: zip)**
-- 6.15 PM Large data-set for problem 3
+- 6.15 PM Large data-set for problem 3 (**uploaded**)
 - 8 PM Dinner
 
 ## Problem Statement 1: Book A Single Tap Ride
