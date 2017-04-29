@@ -10,6 +10,11 @@
 - 6.15 PM Large data-set for problem 3 (**uploaded**)
 - 8 PM Dinner
 
+### Day 2
+- 9 AM Code submission deadline
+- 9.30 AM Demos
+- 12 PM Award distribution
+
 ## Problem Statement 1: Book A Single Tap Ride
 
 Build a progressive web app, Hybrid Mobile app, Android app or iOS app for a one time single click ride hailing utilizing our platform. Usually, customers have to register and verify by their cell phone numbers and email addresses to use our customer web site (app.careem.com), or Careem apps on iOS and Android. However, sometimes one time customers arriving at airports, hospitals, sporting or music events might not have the apps handy but could use a kiosk hosting a tablet or mobile device installed in these locations for one time rides. Users should only require to put in their cell phone numbers, optional drop off location, and be able to select the car type available for that city. They should be able to see the details of the assigned captain (Name, phone number) and vehicle (colour, make/model, registration number) along with the estimated time of arrival, estimated amount, and help line phone number before the app resets to welcome the next customer. Any cancelations or enquiries can be made via the provided phone numbers of the help line and captain. For extra points dispatch SMS for phone number PIN verification, captain assignment, trip updates.
