@@ -5,7 +5,8 @@
 ### Day 1
 - 2 PM Lunch
 - 4 PM Tea
-- 6 PM Design doc submission // *TODO: How to submit?*
+- 6 PM Design doc submission **(email: lamak.qaizar@careem.com, subject: 'TEAM #X - Design Doc', attachment: zip)**
+- 6.15 PM Large data-set for problem 3
 - 8 PM Dinner
 
 ## Problem Statement 1: Book A Single Tap Ride
