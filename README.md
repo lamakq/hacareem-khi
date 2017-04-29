@@ -1,10 +1,10 @@
-# hacareem-khi
+# Hacareem Karachi Problem Statement
 
 ## Problem Statement 1: Book A Single Tap Ride
 
 Build a progressive web app, Hybrid Mobile app, Android app or iOS app for a one time single click ride hailing utilizing our platform. Usually, customers have to register and verify by their cell phone numbers and email addresses to use our customer web site (app.careem.com), or Careem apps on iOS and Android. However, sometimes one time customers arriving at airports, hospitals, sporting or music events might not have the apps handy but could use a kiosk hosting a tablet or mobile device installed in these locations for one time rides. Users should only require to put in their cell phone numbers, optional drop off location, and be able to select the car type available for that city. They should be able to see the details of the assigned captain (Name, phone number) and vehicle (colour, make/model, registration number) along with the estimated time of arrival, estimated amount, and help line phone number before the app resets to welcome the next customer. Any cancelations or enquiries can be made via the provided phone numbers of the help line and captain. For extra points dispatch SMS for phone number PIN verification, captain assignment, trip updates.
 
-*Things to Think About*
+**Things to Think About**
 - Native or Hybrid
 - What REST framework / JSON parser will you use
 - User Experience
@@ -62,9 +62,9 @@ Customers frequently travel the same routes. Given where the customer has asked 
 
 Your design / application will comprise of the following parts:
 
-A suggestion engine that consumes rides as they happen. A publisher jar with sample data has been provided that you can run locally to simulate traffic to an endpoint that you create.
-An API that suggests (one or more) destinations given a user ID, pickup location and pickup time - design for a speedy user experience (suggestions in less than 100ms).
-A user interface (web or mobile) that integrates with this API.
+1. A suggestion engine that consumes rides as they happen. A publisher jar with sample data has been provided that you can run locally to simulate traffic to an endpoint that you create.
+2. An API that suggests (one or more) destinations given a user ID, pickup location and pickup time - design for a speedy user experience (suggestions in less than 100ms).
+3. A user interface (web or mobile) that integrates with this API.
 
 Note that you can pick 1 and 2, or 2 and 3 based on your areas of interest. Going full-monty (1, 2 and 3) will earn you some extra nuggets!
 
