@@ -5,7 +5,7 @@
 ### Day 1
 - 2 PM Lunch
 - 4 PM Tea
-- 6 PM Design doc submission **(email: lamak.qaizar@careem.com, subject: 'TEAM #X - Design Doc', attachment: zip)**
+- 6 PM Design doc submission **(email: lamak.qaizar@careem.com, subject: 'Hacareem KHI TEAM #X - Design Doc', attachment: zip)**
 - 6.15 PM Large data-set for problem 3
 - 8 PM Dinner
 
