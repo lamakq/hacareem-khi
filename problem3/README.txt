@@ -1,4 +1,4 @@
-== Execute the publisher using the following command: ==
+## Execute the publisher using the following command:
 
 java -jar publisher.jar <CSV file path> <consumer endpoint>
 
