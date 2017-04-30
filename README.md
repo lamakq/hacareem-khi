@@ -11,11 +11,10 @@
 - 8.00 PM Dinner
 
 ### Day 2
-- 9.00 AM Code submission deadline
+- 9.00 AM Code submission deadline (submit code & design docs here: https://github.com/lamakq/hacareem-khi-submissions)
 - 9.30 AM Demos
 - 12.00 PM Award distribution
 - 12.30 PM Interviews for shortlisted candidates
-
 
 ## Problem Statement 1: Book A Single Tap Ride
 
